@@ -60,6 +60,9 @@ class ORSet {
 
  private:
   // TODO(student): Add your private memeber variables to represent ORSet.
+  vector<T> Elements_set;//set E
+  vector<T> Tomb_set;//set T
+
 };
 
 }  // namespace bustub
