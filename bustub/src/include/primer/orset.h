@@ -60,8 +60,8 @@ class ORSet {
 
  private:
   // TODO(student): Add your private memeber variables to represent ORSet.
-  vector<T> Elements_set;//set E
-  vector<T> Tomb_set;//set T
+  vector<pair<T,uid_t> > Elements_set;//set E
+  vector<pair<T,uid_t> > Tomb_set;//set T
 
 };
 

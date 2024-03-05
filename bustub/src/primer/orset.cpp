@@ -11,7 +11,7 @@ template <typename T>
 auto ORSet<T>::Contains(const T &elem) const -> bool {
   // TODO(student): Implement this
   for(auto ELEM:Elements_set){
-    if(elem==ELEM)return true;
+    if(elem==ELEM.first)return true;
   }
   return false;
   //throw NotImplementedException("ORSet<T>::Contains is not implemented");
