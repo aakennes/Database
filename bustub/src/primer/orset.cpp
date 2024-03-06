@@ -9,9 +9,12 @@ namespace bustub {
 
 template <typename T>
 auto ORSet<T>::Contains(const T &elem) const -> bool {
-  for(auto ELEM:Elements_set){
-    if(elem==ELEM.first)return true;
-  }
+  // for(auto ELEM:Elements_set){
+  //   if(elem==ELEM.first)return true;
+  // }
+  // return false;
+  auto it=std::lower_bound(Elements_set.begin(),Elements_set.end(),std::pair(elem,(uid_t)0));
+  if(it!=Elements_set.end()&&(*it).first==elem)return true;
   return false;
 }
 
