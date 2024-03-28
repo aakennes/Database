@@ -14,11 +14,11 @@
 
 #include <limits>
 #include <list>
+#include <memory>
 #include <mutex>  // NOLINT
 #include <set>
 #include <unordered_map>
 #include <vector>
-#include <memory>
 
 #include "common/config.h"
 #include "common/macros.h"
@@ -39,8 +39,7 @@ class LRUKNode {
   auto History() -> std::list<size_t> { return history_; }
   void is_evictable_change() { is_evictable_ ^= 1; }
   bool operator<(const LRUKNode &A) const {
-    return is_evictable_==A.is_evictable_?history_.front() < A.history_.front()
-    :is_evictable_>A.is_evictable_; 
+    return is_evictable_ == A.is_evictable_ ? history_.front() < A.history_.front() : is_evictable_ > A.is_evictable_;
   }
 
  private:
@@ -164,17 +163,18 @@ class LRUKReplacer {
   auto Size() -> size_t;
   auto K() -> size_t { return k_; }
   struct CompareNode {
-      bool operator()(const std::shared_ptr<LRUKNode>& A, const std::shared_ptr<LRUKNode>& B) const {
-        return A->is_evictable_==B->is_evictable_?A->history_.front() < B->history_.front()
-    :A->is_evictable_>B->is_evictable_; 
-      }
+    bool operator()(const std::shared_ptr<LRUKNode> &A, const std::shared_ptr<LRUKNode> &B) const {
+      return A->is_evictable_ == B->is_evictable_ ? A->history_.front() < B->history_.front()
+                                                  : A->is_evictable_ > B->is_evictable_;
+    }
   };
+
  private:
   // TODO(student): implement me! You can replace these member variables as you like.
   // Remove maybe_unused if you start using them.
   std::unordered_map<frame_id_t, std::shared_ptr<LRUKNode>> node_store_;
-  std::set<std::shared_ptr<LRUKNode>,CompareNode> node_less_k_;
-  std::set<std::shared_ptr<LRUKNode>,CompareNode> node_more_k_;
+  std::set<std::shared_ptr<LRUKNode>, CompareNode> node_less_k_;
+  std::set<std::shared_ptr<LRUKNode>, CompareNode> node_more_k_;
   size_t current_timestamp_{0};
   size_t curr_size_{0};
   size_t map_size_{0};
