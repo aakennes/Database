@@ -60,9 +60,9 @@ class ORSet {
 
  private:
   // TODO(student): Add your private memeber variables to represent ORSet.
-  std::vector<std::pair<T,uid_t> > Elements_set;//set E
-  std::vector<std::pair<T,uid_t> > Tomb_set;//set T
-  //pair.first:element second:id
+  std::vector<std::pair<T, uid_t> > Elements_set;  // set E
+  std::vector<std::pair<T, uid_t> > Tomb_set;      // set T
+  // pair.first:element second:id
 };
 
 }  // namespace bustub

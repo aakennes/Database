@@ -15,8 +15,10 @@
 #include <limits>
 #include <list>
 #include <mutex>  // NOLINT
+#include <set>
 #include <unordered_map>
 #include <vector>
+#include <memory>
 
 #include "common/config.h"
 #include "common/macros.h"
@@ -26,14 +28,28 @@ namespace bustub {
 enum class AccessType { Unknown = 0, Lookup, Scan, Index };
 
 class LRUKNode {
+ public:
+  friend class LRUKReplacer;
+  LRUKNode(){};
+  explicit LRUKNode(std::list<size_t> history, size_t k, frame_id_t fid, bool is_evictable);
+  ~LRUKNode() = default;
+  auto K() -> size_t { return this->k_; }
+  auto Fid() -> size_t { return this->fid_; }
+  auto Is_evictable() -> bool { return this->is_evictable_; }
+  auto History() -> std::list<size_t> { return history_; }
+  void is_evictable_change() { is_evictable_ ^= 1; }
+  bool operator<(const LRUKNode &A) const {
+    return is_evictable_==A.is_evictable_?history_.front() < A.history_.front()
+    :is_evictable_>A.is_evictable_; 
+  }
+
  private:
   /** History of last seen K timestamps of this page. Least recent timestamp stored in front. */
   // Remove maybe_unused if you start using them. Feel free to change the member variables as you want.
-
-  [[maybe_unused]] std::list<size_t> history_;
-  [[maybe_unused]] size_t k_;
-  [[maybe_unused]] frame_id_t fid_;
-  [[maybe_unused]] bool is_evictable_{false};
+  std::list<size_t> history_;
+  size_t k_;
+  frame_id_t fid_;
+  bool is_evictable_{false};
 };
 
 /**
@@ -65,7 +81,7 @@ class LRUKReplacer {
    *
    * @brief Destroys the LRUReplacer.
    */
-  ~LRUKReplacer() = default;
+  ~LRUKReplacer();
 
   /**
    * TODO(P1): Add implementation
@@ -146,16 +162,25 @@ class LRUKReplacer {
    * @return size_t
    */
   auto Size() -> size_t;
-
+  auto K() -> size_t { return k_; }
+  struct CompareNode {
+      bool operator()(const std::shared_ptr<LRUKNode>& A, const std::shared_ptr<LRUKNode>& B) const {
+        return A->is_evictable_==B->is_evictable_?A->history_.front() < B->history_.front()
+    :A->is_evictable_>B->is_evictable_; 
+      }
+  };
  private:
   // TODO(student): implement me! You can replace these member variables as you like.
   // Remove maybe_unused if you start using them.
-  [[maybe_unused]] std::unordered_map<frame_id_t, LRUKNode> node_store_;
-  [[maybe_unused]] size_t current_timestamp_{0};
-  [[maybe_unused]] size_t curr_size_{0};
-  [[maybe_unused]] size_t replacer_size_;
-  [[maybe_unused]] size_t k_;
-  [[maybe_unused]] std::mutex latch_;
+  std::unordered_map<frame_id_t, std::shared_ptr<LRUKNode>> node_store_;
+  std::set<std::shared_ptr<LRUKNode>,CompareNode> node_less_k_;
+  std::set<std::shared_ptr<LRUKNode>,CompareNode> node_more_k_;
+  size_t current_timestamp_{0};
+  size_t curr_size_{0};
+  size_t map_size_{0};
+  size_t replacer_size_;
+  size_t k_;
+  std::mutex latch_;
 };
 
 }  // namespace bustub

@@ -2443,8 +2443,8 @@ private:
         // If we have a valid elf handle, return the new elf handle
         // and file handle and discard the original ones
         if (debuglink_elf) {
-          elf_handle = move(debuglink_elf);
-          file_handle = move(debuglink_file);
+          elf_handle = std::move(debuglink_elf);
+          file_handle = std::move(debuglink_file);
         }
       }
     }
