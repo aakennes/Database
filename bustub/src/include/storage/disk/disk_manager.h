@@ -39,6 +39,8 @@ class DiskManager {
 
   virtual ~DiskManager() = default;
 
+  // friend class DiskScheduler;
+
   /**
    * Shut down the disk manager and close all the file resources.
    */

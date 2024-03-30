@@ -73,6 +73,8 @@ class DiskScheduler {
    */
   void StartWorkerThread();
 
+  friend class BufferPoolManager;
+
   using DiskSchedulerPromise = std::promise<bool>;
 
   /**

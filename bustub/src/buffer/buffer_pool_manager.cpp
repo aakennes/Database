@@ -99,10 +99,7 @@ auto BufferPoolManager::FetchPage(page_id_t page_id, [[maybe_unused]] AccessType
   }
   page_table_[page_id] = frame_tofetch;
   auto page_tofetch = &pages_[frame_tofetch];
-  auto schedule_finish = disk_scheduler_->CreatePromise();
-  auto future = schedule_finish.get_future();
-  disk_scheduler_->Schedule(DiskRequest{false, page_tofetch->data_, page_id, std::move(schedule_finish)});
-  future.get();
+  disk_scheduler_->disk_manager_->ReadPage(page_id, page_tofetch->data_);
   page_tofetch->page_id_ = page_id;
   page_tofetch->is_dirty_ = true;
   page_tofetch->pin_count_++;
@@ -135,19 +132,12 @@ auto BufferPoolManager::UnpinPage(page_id_t page_id, bool is_dirty, [[maybe_unus
 auto BufferPoolManager::FlushPage(page_id_t page_id) -> bool {
   std::unique_lock<std::mutex> guard(latch_);
   if (page_table_.find(page_id) == page_table_.end()) {
-    // guard.unlock();
     return false;
   }
   frame_id_t frame_target = page_table_[page_id];
   auto page_target = &pages_[frame_target];
-  // guard.unlock();
-  auto schedule_finish = disk_scheduler_->CreatePromise();
-  auto future = schedule_finish.get_future();
-  disk_scheduler_->Schedule(DiskRequest{true, page_target->data_, page_id, std::move(schedule_finish)});
-  future.get();
-  // guard.lock();
+  disk_scheduler_->disk_manager_->WritePage(page_id, page_target->data_);
   page_target->is_dirty_ = false;
-  // guard.unlock();
   return true;
 }
 
