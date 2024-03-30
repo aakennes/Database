@@ -46,7 +46,9 @@ auto BufferPoolManager::NewPage(page_id_t *page_id) -> Page * {
     frame_now = free_list_.front();
     free_list_.pop_front();
   } else {
+    guard.unlock();
     bool check_evict = replacer_->Evict(&frame_now);
+    guard.lock();
     if (check_evict) {
       auto page_old = &pages_[frame_now];
       auto page_old_id = page_old->GetPageId();
@@ -84,7 +86,9 @@ auto BufferPoolManager::FetchPage(page_id_t page_id, [[maybe_unused]] AccessType
     frame_tofetch = free_list_.front();
     free_list_.pop_front();
   } else {
+    guard.unlock();
     bool check_evict = replacer_->Evict(&frame_tofetch);
+    guard.lock();
     if (check_evict) {
       auto page_old = &pages_[frame_tofetch];
       auto page_old_id = page_old->GetPageId();
@@ -184,13 +188,13 @@ auto BufferPoolManager::FetchPageBasic(page_id_t page_id) -> BasicPageGuard {
 auto BufferPoolManager::FetchPageRead(page_id_t page_id) -> ReadPageGuard {
   // std::cout<<"Before Return"<<'\n';
   Page *page_tofetch = FetchPage(page_id);
-  page_tofetch->RLatch();
+  // page_tofetch->RLatch();
   return {this, page_tofetch};
 }
 
 auto BufferPoolManager::FetchPageWrite(page_id_t page_id) -> WritePageGuard {
   Page *page_tofetch = FetchPage(page_id);
-  page_tofetch->WLatch();
+  // page_tofetch->WLatch();
   return {this, page_tofetch};
 }
 

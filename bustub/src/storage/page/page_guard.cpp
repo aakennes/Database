@@ -16,10 +16,10 @@ BasicPageGuard::BasicPageGuard(BasicPageGuard &&that) noexcept
 void BasicPageGuard::Drop() {
   if (page_ != nullptr) {
     bpm_->UnpinPage(page_->GetPageId(), is_dirty_);
-    is_dirty_ = false;
-    bpm_ = nullptr;
-    page_ = nullptr;
   }
+  is_dirty_ = false;
+  bpm_ = nullptr;
+  page_ = nullptr; 
 }
 
 auto BasicPageGuard::operator=(BasicPageGuard &&that) noexcept -> BasicPageGuard & {
@@ -38,6 +38,7 @@ auto BasicPageGuard::operator=(BasicPageGuard &&that) noexcept -> BasicPageGuard
 BasicPageGuard::~BasicPageGuard() { Drop(); };  // NOLINT
 
 auto BasicPageGuard::UpgradeRead() -> ReadPageGuard {
+  page_->RLatch();
   ReadPageGuard read_guard(bpm_, page_);
   is_dirty_ = false;
   bpm_ = nullptr;
@@ -46,6 +47,7 @@ auto BasicPageGuard::UpgradeRead() -> ReadPageGuard {
 }
 
 auto BasicPageGuard::UpgradeWrite() -> WritePageGuard {
+  page_->WLatch();
   WritePageGuard write_guard(bpm_, page_);
   is_dirty_ = false;
   bpm_ = nullptr;
@@ -63,12 +65,14 @@ ReadPageGuard::ReadPageGuard(ReadPageGuard &&that) noexcept : guard_(std::move(t
 
 auto ReadPageGuard::operator=(ReadPageGuard &&that) noexcept -> ReadPageGuard & {
   if (this != &that) {
-    guard_.page_->RUnlatch();
+    Drop();
+    if (guard_.page_ != nullptr) {
+      guard_.page_->RUnlatch();
+    }
     guard_ = std::move(that.guard_);
   }
   return *this;
 }
-
 void ReadPageGuard::Drop() {
   std::cout << "Drop() Run Success" << '\n';
   if (guard_.page_ != nullptr) {
@@ -76,6 +80,7 @@ void ReadPageGuard::Drop() {
     guard_.Drop();
   }
 }
+
 
 ReadPageGuard::~ReadPageGuard() {
   std::cout << "~ReadPageGuard() Run Success" << '\n';
@@ -89,7 +94,10 @@ WritePageGuard::WritePageGuard(WritePageGuard &&that) noexcept : guard_(std::mov
 
 auto WritePageGuard::operator=(WritePageGuard &&that) noexcept -> WritePageGuard & {
   if (this != &that) {
-    guard_.page_->WUnlatch();
+    Drop();
+    if (guard_.page_ != nullptr) {
+      guard_.page_->WUnlatch();
+    }
     guard_ = std::move(that.guard_);
   }
   return *this;
@@ -101,6 +109,7 @@ void WritePageGuard::Drop() {
     guard_.Drop();
   }
 }
+
 
 WritePageGuard::~WritePageGuard() { Drop(); }  // NOLINT
 
