@@ -12,6 +12,7 @@
 
 #pragma once
 
+#include <iostream>
 #include <limits>
 #include <list>
 #include <memory>
@@ -80,7 +81,7 @@ class LRUKReplacer {
    *
    * @brief Destroys the LRUReplacer.
    */
-  ~LRUKReplacer() =default;
+  ~LRUKReplacer() = default;
 
   /**
    * TODO(P1): Add implementation
@@ -163,15 +164,27 @@ class LRUKReplacer {
   auto Size() -> size_t;
   auto K() -> size_t { return k_; }
   struct CompareNode {
-    auto operator()(const std::shared_ptr<LRUKNode> &A, const std::shared_ptr<LRUKNode> &B)const ->bool {
-      if(A->is_evictable_&&!B->is_evictable_){
-        return true;
-      }
-      return A->history_.front() < B->history_.front();
-      // return A->is_evictable_ == B->is_evictable_ ? A->history_.front() < B->history_.front()
-      //                                             : A->is_evictable_ > B->is_evictable_;
+    auto operator()(const std::shared_ptr<LRUKNode> &A, const std::shared_ptr<LRUKNode> &B) const -> bool {
+      // if (A->is_evictable_ && !B->is_evictable_) {
+      //   return true;
+      // }
+      // return A->history_.front() < B->history_.front();
+      return A->is_evictable_ == B->is_evictable_ ? A->history_.front() < B->history_.front()
+                                                  : A->is_evictable_ > B->is_evictable_;
     }
   };
+  void node_less_k_print() {
+    for (auto it : node_less_k_) {
+      std::cout << it->Fid() << " " << it->is_evictable_ << " " << it->history_.size() << " - ";
+    }
+    std::cout << '\n';
+  }
+  void node_more_k_print() {
+    for (auto it : node_more_k_) {
+      std::cout << it->Fid() << " " << it->is_evictable_ << " " << it->history_.size() << " - ";
+    }
+    std::cout << '\n';
+  }
 
  private:
   // TODO(student): implement me! You can replace these member variables as you like.
