@@ -59,19 +59,6 @@ void ORSet<T>::Merge(const ORSet<T> &other) {
       Tomb_set.insert(it, ELEM);
     }
   }
-  // for(auto ELEM:other.Tomb_set){
-  //   auto it1=std::lower_bound(Elements_set.begin(),Elements_set.end(),ELEM);
-  //   auto it2=std::lower_bound(Tomb_set.begin(),Tomb_set.end(),ELEM);
-  //   if(it1!=Elements_set.end()&&*it1==ELEM){
-  //     Elements_set.erase(it1);
-  //   }
-  //   if(it2==Tomb_set.end()||*it2!=ELEM){
-  //     Tomb_set.insert(it2,ELEM);
-  //   }
-  // }
-  // for(auto it=Elements_set.begin();it!=Elements_set.end();++it){
-  //   if(*it==*(--it))Elements_set.erase(it),it--;
-  // }
   // throw NotImplementedException("ORSet<T>::Merge is not implemented");
 }
 

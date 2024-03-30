@@ -20,6 +20,7 @@
 #include <unordered_map>
 #include <vector>
 
+// #include "buffer/buffer_pool_manager.h"
 #include "common/config.h"
 #include "common/macros.h"
 
@@ -30,17 +31,14 @@ enum class AccessType { Unknown = 0, Lookup, Scan, Index };
 class LRUKNode {
  public:
   friend class LRUKReplacer;
-  LRUKNode(){};
+  LRUKNode() = default;
   explicit LRUKNode(std::list<size_t> history, size_t k, frame_id_t fid, bool is_evictable);
   ~LRUKNode() = default;
   auto K() -> size_t { return this->k_; }
   auto Fid() -> size_t { return this->fid_; }
-  auto Is_evictable() -> bool { return this->is_evictable_; }
+  auto Isevictable() -> bool { return this->is_evictable_; }
   auto History() -> std::list<size_t> { return history_; }
-  void is_evictable_change() { is_evictable_ ^= 1; }
-  bool operator<(const LRUKNode &A) const {
-    return is_evictable_ == A.is_evictable_ ? history_.front() < A.history_.front() : is_evictable_ > A.is_evictable_;
-  }
+  void Isevictablechange() { is_evictable_ ^= 1; }
 
  private:
   /** History of last seen K timestamps of this page. Least recent timestamp stored in front. */
@@ -73,6 +71,8 @@ class LRUKReplacer {
    */
   explicit LRUKReplacer(size_t num_frames, size_t k);
 
+  friend class BufferPoolManager;
+
   DISALLOW_COPY_AND_MOVE(LRUKReplacer);
 
   /**
@@ -80,7 +80,7 @@ class LRUKReplacer {
    *
    * @brief Destroys the LRUReplacer.
    */
-  ~LRUKReplacer();
+  ~LRUKReplacer() =default;
 
   /**
    * TODO(P1): Add implementation
@@ -163,9 +163,13 @@ class LRUKReplacer {
   auto Size() -> size_t;
   auto K() -> size_t { return k_; }
   struct CompareNode {
-    bool operator()(const std::shared_ptr<LRUKNode> &A, const std::shared_ptr<LRUKNode> &B) const {
-      return A->is_evictable_ == B->is_evictable_ ? A->history_.front() < B->history_.front()
-                                                  : A->is_evictable_ > B->is_evictable_;
+    auto operator()(const std::shared_ptr<LRUKNode> &A, const std::shared_ptr<LRUKNode> &B)const ->bool {
+      if(A->is_evictable_&&!B->is_evictable_){
+        return true;
+      }
+      return A->history_.front() < B->history_.front();
+      // return A->is_evictable_ == B->is_evictable_ ? A->history_.front() < B->history_.front()
+      //                                             : A->is_evictable_ > B->is_evictable_;
     }
   };
 
@@ -177,7 +181,6 @@ class LRUKReplacer {
   std::set<std::shared_ptr<LRUKNode>, CompareNode> node_more_k_;
   size_t current_timestamp_{0};
   size_t curr_size_{0};
-  size_t map_size_{0};
   size_t replacer_size_;
   size_t k_;
   std::mutex latch_;

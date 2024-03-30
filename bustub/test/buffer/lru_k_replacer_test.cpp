@@ -32,7 +32,7 @@ TEST(LRUKReplacerTest, SampleTest) {
   lru_replacer.SetEvictable(4, true);
   lru_replacer.SetEvictable(5, true);
   lru_replacer.SetEvictable(6, false);
-  // ASSERT_EQ(5, lru_replacer.Size());
+  
   // Scenario: Insert access history for frame 1. Now frame 1 has two access histories.
   // All other frames have max backward k-dist. The order of eviction is [2,3,4,5,1].
   lru_replacer.RecordAccess(1);
@@ -56,7 +56,7 @@ TEST(LRUKReplacerTest, SampleTest) {
   lru_replacer.RecordAccess(4);
   lru_replacer.SetEvictable(3, true);
   lru_replacer.SetEvictable(4, true);
-  // ASSERT_EQ(4, lru_replacer.Size());
+  ASSERT_EQ(4, lru_replacer.Size());
 
   // // Scenario: continue looking for victims. We expect 3 to be evicted next.
   lru_replacer.Evict(&value);

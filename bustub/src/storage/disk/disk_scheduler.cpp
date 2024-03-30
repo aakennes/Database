@@ -38,13 +38,15 @@ void DiskScheduler::Schedule(DiskRequest r) { request_queue_.Put(std::move(r)); 
 void DiskScheduler::StartWorkerThread() {
   auto r = request_queue_.Get();
   while (r != std::nullopt) {
-    if (r->is_write_) {
-      disk_manager_->WritePage(r->page_id_, r->data_);
-    } else {
-      disk_manager_->ReadPage(r->page_id_, r->data_);
+    if (r.has_value()) {
+      if (r->is_write_) {
+        disk_manager_->WritePage(r->page_id_, r->data_);
+      } else {
+        disk_manager_->ReadPage(r->page_id_, r->data_);
+      }
+      r->callback_.set_value(true);
     }
-    r->callback_.set_value(true);
     r = request_queue_.Get();
   }
-}  // namespace bustub
+}
 }  // namespace bustub
