@@ -34,14 +34,14 @@ auto LRUKReplacer::Evict(frame_id_t *frame_id) -> bool {
       //   // std::cout<<(*node_less_k_.begin()==node_now)<<'\n';
       //   // std::cout<<(node_now==*node_less_k_.find(node_store_[*frame_id]))<<'\n';
       //   // std::cout<<(node_less_k_.find(node_store_[*frame_id])==node_less_k_.end())<<'\n';
-      //   node_less_k_print();
+      //   NodeLessKPrint();
       // }
       node_less_k_.erase(node_less_k_.begin());
       // node_less_k_.erase(node_store_[*frame_id]);
       // node_store_[*frame_id]->is_evictable_=false;
       // if(*frame_id==3){
       //   std::cout<<"HERE2"<<'\n';
-      //   node_less_k_print();
+      //   NodeLessKPrint();
       // }
       node_store_[*frame_id]->history_.clear();
       node_store_.erase(*frame_id);
@@ -112,16 +112,16 @@ void LRUKReplacer::SetEvictable(frame_id_t frame_id, bool set_evictable) {
       auto &tmp = node_store_[frame_id];
       // if(frame_id==1){
       //   std::cout<<"HERE"<<'\n';
-      //   node_more_k_print();
+      //   NodeMoreKPrint();
       // }
       node_more_k_.erase(node_store_[frame_id]);
       tmp->is_evictable_ = set_evictable;
       // if(frame_id==1){
-      //   node_more_k_print();
+      //   NodeMoreKPrint();
       // }
       node_more_k_.insert(tmp);
       // if(frame_id==1){
-      //   node_more_k_print();
+      //   NodeMoreKPrint();
       // }
     } else if (node_less_k_.find(node_store_[frame_id]) != node_less_k_.end()) {
       // LRUKNode &tmp = *node_store_[frame_id];

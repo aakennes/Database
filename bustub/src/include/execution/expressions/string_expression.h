@@ -52,14 +52,16 @@ class StringExpression : public AbstractExpression {
         case StringExpressionType::Lower:
           if (ch >= 'A' && ch <= 'Z') {
             ret_str.push_back(ch + 'a' - 'A');
-          } else
+          } else {
             ret_str.push_back(ch);
+          }
           break;
         case StringExpressionType::Upper:
           if (ch >= 'a' && ch <= 'z') {
             ret_str.push_back(ch + 'A' - 'a');
-          } else
+          } else {
             ret_str.push_back(ch);
+          }
           break;
       }
     }

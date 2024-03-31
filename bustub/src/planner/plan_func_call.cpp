@@ -34,13 +34,14 @@ auto Planner::GetFuncCallFromFactory(const std::string &func_name, std::vector<A
       args[0]->GetReturnType().GetType() != TypeId::VARCHAR) {
     throw Exception(fmt::format("func call {} not supported in planner yet", func_name));
   }
-  StringExpressionType String_Type;
-  if (func_name == "lower")
-    String_Type = StringExpressionType::Lower;
-  else
-    String_Type = StringExpressionType::Upper;
-  StringExpression String_computed(args.front(), String_Type);
-  std::shared_ptr<StringExpression> ret_ptr = std::make_shared<StringExpression>(args.front(), String_Type);
+  StringExpressionType string_type;
+  if (func_name == "lower"){
+    string_type = StringExpressionType::Lower;
+  } else {
+    string_type = StringExpressionType::Upper;
+  }
+  StringExpression string_computed(args.front(), string_type);
+  std::shared_ptr<StringExpression> ret_ptr = std::make_shared<StringExpression>(args.front(), string_type);
   return ret_ptr;
   // throw Exception(fmt::format("func call {} not supported in planner yet", func_name));
 }

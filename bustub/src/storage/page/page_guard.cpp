@@ -19,7 +19,7 @@ void BasicPageGuard::Drop() {
   }
   is_dirty_ = false;
   bpm_ = nullptr;
-  page_ = nullptr; 
+  page_ = nullptr;
 }
 
 auto BasicPageGuard::operator=(BasicPageGuard &&that) noexcept -> BasicPageGuard & {
@@ -81,7 +81,6 @@ void ReadPageGuard::Drop() {
   }
 }
 
-
 ReadPageGuard::~ReadPageGuard() {
   std::cout << "~ReadPageGuard() Run Success" << '\n';
   // guard_.page_->RUnlatch();
@@ -109,7 +108,6 @@ void WritePageGuard::Drop() {
     guard_.Drop();
   }
 }
-
 
 WritePageGuard::~WritePageGuard() { Drop(); }  // NOLINT
 

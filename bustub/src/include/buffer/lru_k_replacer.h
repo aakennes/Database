@@ -170,17 +170,17 @@ class LRUKReplacer {
       // }
       // return A->history_.front() < B->history_.front();
       return A->is_evictable_ == B->is_evictable_ ? A->history_.front() < B->history_.front()
-                                                  : A->is_evictable_ > B->is_evictable_;
+                                                  : static_cast<int>(A->is_evictable_) > static_cast<int>(B->is_evictable_);
     }
   };
-  void node_less_k_print() {
-    for (auto it : node_less_k_) {
+  void NodeLessKPrint() {
+    for (auto &it : node_less_k_) {
       std::cout << it->Fid() << " " << it->is_evictable_ << " " << it->history_.size() << " - ";
     }
     std::cout << '\n';
   }
-  void node_more_k_print() {
-    for (auto it : node_more_k_) {
+  void NodeMoreKPrint() {
+    for (auto &it : node_more_k_) {
       std::cout << it->Fid() << " " << it->is_evictable_ << " " << it->history_.size() << " - ";
     }
     std::cout << '\n';
