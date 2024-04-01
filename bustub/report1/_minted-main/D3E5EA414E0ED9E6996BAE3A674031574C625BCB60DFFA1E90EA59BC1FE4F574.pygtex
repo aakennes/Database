@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{+w}{    }\PYG{o}{*}\PYG{n}{page\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{AllocatePage}\PYG{p}{();}
+\PYG{+w}{    }\PYG{n}{page\PYGZus{}table\PYGZus{}}\PYG{p}{[}\PYG{o}{*}\PYG{n}{page\PYGZus{}id}\PYG{p}{]}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{frame\PYGZus{}now}\PYG{p}{;}
+\PYG{+w}{    }\PYG{k}{auto}\PYG{+w}{ }\PYG{n}{page\PYGZus{}new}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{pages\PYGZus{}}\PYG{p}{[}\PYG{n}{frame\PYGZus{}now}\PYG{p}{];}
+\PYG{+w}{    }\PYG{n}{page\PYGZus{}new}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{ResetMemory}\PYG{p}{();}
+\PYG{+w}{    }\PYG{n}{page\PYGZus{}new}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{page\PYGZus{}id\PYGZus{}}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{o}{*}\PYG{n}{page\PYGZus{}id}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{page\PYGZus{}new}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{is\PYGZus{}dirty\PYGZus{}}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n+nb}{true}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{page\PYGZus{}new}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{pin\PYGZus{}count\PYGZus{}}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{1}\PYG{p}{;}
+\PYG{+w}{    }\PYG{n}{guard}\PYG{p}{.}\PYG{n}{unlock}\PYG{p}{();}
+\PYG{+w}{    }\PYG{n}{replacer\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{RecordAccess}\PYG{p}{(}\PYG{n}{frame\PYGZus{}now}\PYG{p}{);}
+\PYG{+w}{    }\PYG{n}{replacer\PYGZus{}}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{SetEvictable}\PYG{p}{(}\PYG{n}{frame\PYGZus{}now}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nb}{false}\PYG{p}{);}
+\PYG{+w}{    }\PYG{n}{guard}\PYG{p}{.}\PYG{n}{lock}\PYG{p}{();}
+\end{Verbatim}

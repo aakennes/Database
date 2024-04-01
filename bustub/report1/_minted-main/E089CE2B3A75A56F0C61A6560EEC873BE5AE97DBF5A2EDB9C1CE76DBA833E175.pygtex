@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{+w}{ }std::vector\PYGZlt{}std::pair\PYGZlt{}T,\PYG{+w}{ }uid\PYGZus{}t\PYGZgt{}\PYG{+w}{ }\PYGZgt{}\PYG{+w}{ }elements\PYGZus{}set\PYGZus{}\PYG{p}{;}\PYG{+w}{  }//\PYG{+w}{ }\PYG{n+nb}{set}\PYG{+w}{ }E
+\PYG{+w}{ }std::vector\PYGZlt{}std::pair\PYGZlt{}T,\PYG{+w}{ }uid\PYGZus{}t\PYGZgt{}\PYG{+w}{ }\PYGZgt{}\PYG{+w}{ }tomb\PYGZus{}set\PYGZus{}\PYG{p}{;}\PYG{+w}{      }//\PYG{+w}{ }\PYG{n+nb}{set}\PYG{+w}{ }T
+\end{Verbatim}

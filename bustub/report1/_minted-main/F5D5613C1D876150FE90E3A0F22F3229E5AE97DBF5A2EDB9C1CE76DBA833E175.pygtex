@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{+w}{ }sudo\PYG{+w}{ }update\PYGZhy{}alternatives\PYG{+w}{ }\PYGZhy{}\PYGZhy{}config\PYG{+w}{ }clang
+\PYG{+w}{ }sudo\PYG{+w}{ }update\PYGZhy{}alternatives\PYG{+w}{ }\PYGZhy{}\PYGZhy{}config\PYG{+w}{ }clang++
+\end{Verbatim}

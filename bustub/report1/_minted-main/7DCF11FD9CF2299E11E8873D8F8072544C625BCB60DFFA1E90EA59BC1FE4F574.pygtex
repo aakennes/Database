@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{+w}{       }\PYG{k}{auto}\PYG{+w}{ }\PYG{o}{\PYGZam{}}\PYG{n}{tmp}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{node\PYGZus{}store\PYGZus{}}\PYG{p}{[}\PYG{n}{frame\PYGZus{}id}\PYG{p}{];}
+\PYG{+w}{       }\PYG{n}{node\PYGZus{}more\PYGZus{}k\PYGZus{}}\PYG{p}{.}\PYG{n}{erase}\PYG{p}{(}\PYG{n}{frame\PYGZus{}node}\PYG{p}{);}
+\PYG{+w}{       }\PYG{n}{tmp}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{history\PYGZus{}}\PYG{p}{.}\PYG{n}{pop\PYGZus{}front}\PYG{p}{();}
+\PYG{+w}{       }\PYG{n}{tmp}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{history\PYGZus{}}\PYG{p}{.}\PYG{n}{push\PYGZus{}back}\PYG{p}{(}\PYG{n}{current\PYGZus{}timestamp\PYGZus{}}\PYG{p}{);}
+\PYG{+w}{       }\PYG{n}{node\PYGZus{}more\PYGZus{}k\PYGZus{}}\PYG{p}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{n}{tmp}\PYG{p}{);}
+\end{Verbatim}

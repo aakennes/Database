@@ -105,19 +105,9 @@ void LRUKReplacer::SetEvictable(frame_id_t frame_id, bool set_evictable) {
   if (set_evictable != node_store_[frame_id]->Isevictable()) {
     if (node_more_k_.find(node_store_[frame_id]) != node_more_k_.end()) {
       auto &tmp = node_store_[frame_id];
-      // if(frame_id==1){
-      //   std::cout<<"HERE"<<'\n';
-      //   NodeMoreKPrint();
-      // }
       node_more_k_.erase(node_store_[frame_id]);
       tmp->is_evictable_ = set_evictable;
-      // if(frame_id==1){
-      //   NodeMoreKPrint();
-      // }
       node_more_k_.insert(tmp);
-      // if(frame_id==1){
-      //   NodeMoreKPrint();
-      // }
     } else if (node_less_k_.find(node_store_[frame_id]) != node_less_k_.end()) {
       // LRUKNode &tmp = *node_store_[frame_id];
       auto &tmp = node_store_[frame_id];
@@ -133,7 +123,6 @@ void LRUKReplacer::SetEvictable(frame_id_t frame_id, bool set_evictable) {
       curr_size_--;
     }
   }
-  // guard.unlock();
 }
 
 void LRUKReplacer::Remove(frame_id_t frame_id) {

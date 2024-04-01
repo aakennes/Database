@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{+w}{ }\PYG{k}{auto}\PYG{+w}{ }\PYG{n}{it}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{::}\PYG{n}{lower\PYGZus{}bound}\PYG{p}{(}\PYG{n}{elements\PYGZus{}set\PYGZus{}}\PYG{p}{.}\PYG{n}{begin}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{elements\PYGZus{}set\PYGZus{}}\PYG{p}{.}\PYG{n}{end}\PYG{p}{(),}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{::}\PYG{n}{pair}\PYG{p}{(}\PYG{n}{elem}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{static\PYGZus{}cast}\PYG{o}{\PYGZlt{}}\PYG{k+kt}{uid\PYGZus{}t}\PYG{o}{\PYGZgt{}}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)));}
+\PYG{+w}{ }\PYG{c+c1}{//集合的二分查找}
+\PYG{+w}{ }\PYG{n}{elements\PYGZus{}set\PYGZus{}}\PYG{p}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{n}{it}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{std}\PYG{o}{::}\PYG{n}{pair}\PYG{p}{(}\PYG{n}{elem}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{uid}\PYG{p}{));}
+\PYG{+w}{ }\PYG{n}{elements\PYGZus{}set\PYGZus{}}\PYG{p}{.}\PYG{n}{erase}\PYG{p}{(}\PYG{n}{it}\PYG{p}{);}
+\PYG{+w}{ }\PYG{c+c1}{//二分插入和普通删除}
+\end{Verbatim}
