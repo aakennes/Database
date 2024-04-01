@@ -28,21 +28,7 @@ auto LRUKReplacer::Evict(frame_id_t *frame_id) -> bool {
   for (const auto &node_now : node_less_k_) {
     if (node_now->Isevictable()) {
       *frame_id = node_now->Fid();
-      // if(*frame_id==3){
-      //   std::cout<<"HERE1"<<'\n';
-      //   // std::cout<<(node_now==node_store_[*frame_id])<<'\n';
-      //   // std::cout<<(*node_less_k_.begin()==node_now)<<'\n';
-      //   // std::cout<<(node_now==*node_less_k_.find(node_store_[*frame_id]))<<'\n';
-      //   // std::cout<<(node_less_k_.find(node_store_[*frame_id])==node_less_k_.end())<<'\n';
-      //   NodeLessKPrint();
-      // }
       node_less_k_.erase(node_less_k_.begin());
-      // node_less_k_.erase(node_store_[*frame_id]);
-      // node_store_[*frame_id]->is_evictable_=false;
-      // if(*frame_id==3){
-      //   std::cout<<"HERE2"<<'\n';
-      //   NodeLessKPrint();
-      // }
       node_store_[*frame_id]->history_.clear();
       node_store_.erase(*frame_id);
       curr_size_--;
@@ -54,7 +40,6 @@ auto LRUKReplacer::Evict(frame_id_t *frame_id) -> bool {
     if (node_now->Isevictable()) {
       *frame_id = node_now->Fid();
       node_more_k_.erase(node_more_k_.begin());
-      // node_store_[*frame_id]->is_evictable_=false;
       node_store_[*frame_id]->history_.clear();
       node_store_.erase(*frame_id);
       curr_size_--;
@@ -85,11 +70,17 @@ void LRUKReplacer::RecordAccess(frame_id_t frame_id, AccessType access_type) {
       tmp->history_.push_back(current_timestamp_);
       node_more_k_.insert(tmp);
       // node_more_k_.insert(std::make_shared<LRUKNode>(tmp));
-
-    } else if (frame_node->history_.empty()) {
+    } else {
+      auto &tmp = node_store_[frame_id];
+      node_less_k_.erase(frame_node);
+      tmp->history_.push_back(current_timestamp_);
+      // node_more_k_.insert(std::make_shared<LRUKNode>(tmp));
+      node_less_k_.insert(tmp);
+    }
+    /*else if (frame_node->history_.empty()) {
       frame_node->history_.push_back(current_timestamp_);
       node_less_k_.insert(frame_node);
-    }
+    }*/
   } else {
     if (replacer_size_ == node_store_.size()) {
       return;
@@ -97,7 +88,11 @@ void LRUKReplacer::RecordAccess(frame_id_t frame_id, AccessType access_type) {
     // std::cout<<frame_id<<'\n';
     std::list<size_t> new_history(1, current_timestamp_);
     std::shared_ptr<LRUKNode> frame_node_new(new LRUKNode(std::move(new_history), k_, frame_id, false));
-    node_less_k_.insert(frame_node_new);
+    if(K()>1){
+      node_less_k_.insert(frame_node_new);
+    } else {
+      node_more_k_.insert(frame_node_new);
+    }
     node_store_[frame_id] = frame_node_new;
   }
 }
