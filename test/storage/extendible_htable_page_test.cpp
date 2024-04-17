@@ -14,6 +14,7 @@
 #include <thread>  // NOLINT
 #include <vector>
 
+#include <iostream>
 #include "buffer/buffer_pool_manager.h"
 #include "common/logger.h"
 #include "gtest/gtest.h"
@@ -29,7 +30,7 @@
 namespace bustub {
 
 // NOLINTNEXTLINE
-TEST(ExtendibleHTableTest, DISABLED_BucketPageSampleTest) {
+TEST(ExtendibleHTableTest, BucketPageSampleTest) {
   auto disk_mgr = std::make_unique<DiskManagerUnlimitedMemory>();
   auto bpm = std::make_unique<BufferPoolManager>(5, disk_mgr.get());
 
@@ -87,7 +88,7 @@ TEST(ExtendibleHTableTest, DISABLED_BucketPageSampleTest) {
 }
 
 // NOLINTNEXTLINE
-TEST(ExtendibleHTableTest, DISABLED_HeaderDirectoryPageSampleTest) {
+TEST(ExtendibleHTableTest, HeaderDirectoryPageSampleTest) {
   auto disk_mgr = std::make_unique<DiskManagerUnlimitedMemory>();
   auto bpm = std::make_unique<BufferPoolManager>(5, disk_mgr.get());
 
@@ -138,9 +139,9 @@ TEST(ExtendibleHTableTest, DISABLED_HeaderDirectoryPageSampleTest) {
     BasicPageGuard bucket_guard_4 = bpm->NewPageGuarded(&bucket_page_id_4);
     auto bucket_page_4 = bucket_guard_4.AsMut<ExtendibleHTableBucketPage<GenericKey<8>, RID, GenericComparator<8>>>();
     bucket_page_4->Init(10);
-
+    
     directory_page->SetBucketPageId(0, bucket_page_id_1);
-
+    
     /*
     ======== DIRECTORY (global_depth_: 0) ========
     | bucket_idx | page_id | local_depth |
@@ -174,11 +175,12 @@ TEST(ExtendibleHTableTest, DISABLED_HeaderDirectoryPageSampleTest) {
     for (uint32_t i = 0; i < 100; i++) {
       ASSERT_EQ(directory_page->HashToBucketIndex(i), i % 2);
     }
-
+    // directory_page->PrintDirectory();
     directory_page->SetLocalDepth(0, 2);
+    // directory_page->PrintDirectory();
     directory_page->IncrGlobalDepth();
     directory_page->SetBucketPageId(2, bucket_page_id_3);
-
+    // directory_page->PrintDirectory();
     /*
     ======== DIRECTORY (global_depth_: 2) ========
     | bucket_idx | page_id | local_depth |
@@ -197,6 +199,7 @@ TEST(ExtendibleHTableTest, DISABLED_HeaderDirectoryPageSampleTest) {
     ASSERT_EQ(directory_page->GetBucketPageId(3), bucket_page_id_2);
 
     for (uint32_t i = 0; i < 100; i++) {
+      // std::cout<<i<<'\n';
       ASSERT_EQ(directory_page->HashToBucketIndex(i), i % 4);
     }
 
@@ -218,6 +221,7 @@ TEST(ExtendibleHTableTest, DISABLED_HeaderDirectoryPageSampleTest) {
     ================ END DIRECTORY ================
     */
     directory_page->VerifyIntegrity();
+    // directory_page->PrintDirectory();
     ASSERT_EQ(directory_page->Size(), 8);
     ASSERT_EQ(directory_page->GetBucketPageId(0), bucket_page_id_1);
     ASSERT_EQ(directory_page->GetBucketPageId(1), bucket_page_id_2);
@@ -256,7 +260,7 @@ TEST(ExtendibleHTableTest, DISABLED_HeaderDirectoryPageSampleTest) {
     |    7    |    3    |    1    |
     ================ END DIRECTORY ================
     */
-
+    directory_page->VerifyIntegrity();
     ASSERT_EQ(directory_page->CanShrink(), true);
     directory_page->DecrGlobalDepth();
 
