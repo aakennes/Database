@@ -23,7 +23,7 @@
 namespace bustub {
 
 // NOLINTNEXTLINE
-TEST(ExtendibleHTableTest, DISABLED_InsertTest1) {
+TEST(ExtendibleHTableTest, InsertTest1) {
   auto disk_mgr = std::make_unique<DiskManagerUnlimitedMemory>();
   auto bpm = std::make_unique<BufferPoolManager>(50, disk_mgr.get());
 
@@ -42,13 +42,13 @@ TEST(ExtendibleHTableTest, DISABLED_InsertTest1) {
   }
 
   ht.VerifyIntegrity();
-
+  // ht.PrintHT();
   // attempt another insert, this should fail because table is full
   ASSERT_FALSE(ht.Insert(num_keys, num_keys));
 }
 
 // NOLINTNEXTLINE
-TEST(ExtendibleHTableTest, DISABLED_InsertTest2) {
+TEST(ExtendibleHTableTest, InsertTest2) {
   auto disk_mgr = std::make_unique<DiskManagerUnlimitedMemory>();
   auto bpm = std::make_unique<BufferPoolManager>(50, disk_mgr.get());
 
@@ -71,7 +71,9 @@ TEST(ExtendibleHTableTest, DISABLED_InsertTest2) {
   // check that they were actually inserted
   for (int i = 0; i < num_keys; i++) {
     std::vector<int> res;
+    // std::cout<<i<<'\n';
     bool got_value = ht.GetValue(i, &res);
+    // std::cout<<i<<'\n';
     ASSERT_TRUE(got_value);
     ASSERT_EQ(1, res.size());
     ASSERT_EQ(i, res[0]);
@@ -89,7 +91,6 @@ TEST(ExtendibleHTableTest, DISABLED_InsertTest2) {
 
   ht.VerifyIntegrity();
 }
-
 // NOLINTNEXTLINE
 TEST(ExtendibleHTableTest, DISABLED_RemoveTest1) {
   auto disk_mgr = std::make_unique<DiskManagerUnlimitedMemory>();

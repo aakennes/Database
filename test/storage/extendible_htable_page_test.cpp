@@ -139,9 +139,9 @@ TEST(ExtendibleHTableTest, HeaderDirectoryPageSampleTest) {
     BasicPageGuard bucket_guard_4 = bpm->NewPageGuarded(&bucket_page_id_4);
     auto bucket_page_4 = bucket_guard_4.AsMut<ExtendibleHTableBucketPage<GenericKey<8>, RID, GenericComparator<8>>>();
     bucket_page_4->Init(10);
-    
+
     directory_page->SetBucketPageId(0, bucket_page_id_1);
-    
+
     /*
     ======== DIRECTORY (global_depth_: 0) ========
     | bucket_idx | page_id | local_depth |

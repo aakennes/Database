@@ -14,7 +14,7 @@ auto ORSet<T>::Contains(const T &elem) const -> bool {
   // }
   // return false;
   auto it = std::lower_bound(elements_set_.begin(), elements_set_.end(), std::pair(elem, static_cast<uid_t>(0)));
-  // if (it != elements_set_.end() && (*it).first == elem){return true;} 
+  // if (it != elements_set_.end() && (*it).first == elem){return true;}
   // return false;
   return static_cast<bool>(it != elements_set_.end() && (*it).first == elem);
 }
@@ -67,7 +67,7 @@ template <typename T>
 auto ORSet<T>::Elements() const -> std::vector<T> {
   std::vector<T> elements_set_output;
   elements_set_output.reserve(elements_set_.size());
-  for (auto& elem : elements_set_) {
+  for (auto &elem : elements_set_) {
     elements_set_output.push_back(elem.first);
   }
   return elements_set_output;

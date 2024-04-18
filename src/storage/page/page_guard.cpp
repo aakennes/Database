@@ -59,9 +59,10 @@ ReadPageGuard::ReadPageGuard(BufferPoolManager *bpm, Page *page) : guard_(bpm, p
   // std::cout << "Construction1" << '\n';
 }
 
-ReadPageGuard::ReadPageGuard(ReadPageGuard &&that) noexcept : guard_(std::move(that.guard_)) {
-  // std::cout << "Construction2" << '\n';
-};
+ReadPageGuard::ReadPageGuard(ReadPageGuard &&that) noexcept
+    : guard_(std::move(that.guard_)){
+          // std::cout << "Construction2" << '\n';
+      };
 
 auto ReadPageGuard::operator=(ReadPageGuard &&that) noexcept -> ReadPageGuard & {
   if (this != &that) {

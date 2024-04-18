@@ -88,7 +88,7 @@ void LRUKReplacer::RecordAccess(frame_id_t frame_id, AccessType access_type) {
     // std::cout<<frame_id<<'\n';
     std::list<size_t> new_history(1, current_timestamp_);
     std::shared_ptr<LRUKNode> frame_node_new(new LRUKNode(std::move(new_history), k_, frame_id, false));
-    if(K()>1){
+    if (K() > 1) {
       node_less_k_.insert(frame_node_new);
     } else {
       node_more_k_.insert(frame_node_new);
