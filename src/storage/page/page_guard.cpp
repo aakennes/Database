@@ -56,11 +56,11 @@ auto BasicPageGuard::UpgradeWrite() -> WritePageGuard {
 }
 
 ReadPageGuard::ReadPageGuard(BufferPoolManager *bpm, Page *page) : guard_(bpm, page) {
-  std::cout << "Construction1" << '\n';
+  // std::cout << "Construction1" << '\n';
 }
 
 ReadPageGuard::ReadPageGuard(ReadPageGuard &&that) noexcept : guard_(std::move(that.guard_)) {
-  std::cout << "Construction2" << '\n';
+  // std::cout << "Construction2" << '\n';
 };
 
 auto ReadPageGuard::operator=(ReadPageGuard &&that) noexcept -> ReadPageGuard & {
@@ -74,7 +74,7 @@ auto ReadPageGuard::operator=(ReadPageGuard &&that) noexcept -> ReadPageGuard & 
   return *this;
 }
 void ReadPageGuard::Drop() {
-  std::cout << "Drop() Run Success" << '\n';
+  // std::cout << "Drop() Run Success" << '\n';
   if (guard_.page_ != nullptr) {
     guard_.page_->RUnlatch();
     guard_.Drop();
@@ -82,7 +82,7 @@ void ReadPageGuard::Drop() {
 }
 
 ReadPageGuard::~ReadPageGuard() {
-  std::cout << "~ReadPageGuard() Run Success" << '\n';
+  // std::cout << "~ReadPageGuard() Run Success" << '\n';
   // guard_.page_->RUnlatch();
   Drop();
 }  // NOLINT
