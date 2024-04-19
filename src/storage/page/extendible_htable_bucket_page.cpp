@@ -22,7 +22,7 @@ template <typename K, typename V, typename KC>
 void ExtendibleHTableBucketPage<K, V, KC>::Init(uint32_t max_size) {
   size_ = 0;
   max_size_ = max_size;
-  for (uint32_t i = 0; i <= max_size; ++i) {
+  for (uint32_t i = 0; i < max_size; ++i) {
     K ktemp = {-1};
     V vtemp = {};
     array_[i] = std::make_pair(ktemp, vtemp);
@@ -31,9 +31,8 @@ void ExtendibleHTableBucketPage<K, V, KC>::Init(uint32_t max_size) {
 
 template <typename K, typename V, typename KC>
 auto ExtendibleHTableBucketPage<K, V, KC>::Lookup(const K &key, V &value, const KC &cmp) const -> bool {
-  for (uint32_t i = 0; i <= size_; ++i) {
+  for (uint32_t i = 0; i < size_; ++i) {
     if (cmp(array_[i].first, key) == 0) {
-      // if(array_[i] cmp std::make_pair(key,value)){
       value = array_[i].second;
       return true;
     }
