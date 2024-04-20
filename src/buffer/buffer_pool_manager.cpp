@@ -121,20 +121,20 @@ auto BufferPoolManager::FetchPage(page_id_t page_id, [[maybe_unused]] AccessType
 
 auto BufferPoolManager::UnpinPage(page_id_t page_id, bool is_dirty, [[maybe_unused]] AccessType access_type) -> bool {
   std::unique_lock<std::mutex> guard(latch_);
-  if (page_table_.find(page_id) == page_table_.end()) {
+  if (page_table_.find(page_id) == page_table_.end() || pages_[page_table_[page_id]].GetPinCount() <= 0) {
     return false;
   }
-  frame_id_t frame_target = page_table_[page_id];
+  auto frame_target = page_table_[page_id];
   auto page_toschedule = &pages_[frame_target];
   if (page_toschedule->GetPinCount() <= 0) {
     return false;
   }
-  if (--page_toschedule->pin_count_ == 0) {
+  if ((--page_toschedule->pin_count_) == 0) {
     guard.unlock();
-    replacer_->SetEvictable(page_table_[page_id], true);
+    replacer_->SetEvictable(frame_target, true);
     guard.lock();
   }
-  page_toschedule->is_dirty_ = is_dirty;
+  page_toschedule->is_dirty_ |= is_dirty;
   return true;
 }
 
