@@ -80,6 +80,7 @@ void ReadPageGuard::Drop() {
     guard_.page_->RUnlatch();
     guard_.Drop();
   }
+  
 }
 
 ReadPageGuard::~ReadPageGuard() {

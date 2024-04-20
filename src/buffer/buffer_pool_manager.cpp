@@ -105,7 +105,9 @@ auto BufferPoolManager::FetchPage(page_id_t page_id, [[maybe_unused]] AccessType
   page_table_[page_id] = frame_tofetch;
   auto page_tofetch = &pages_[frame_tofetch];
   if (!page_table_find) {
+    guard.unlock();
     disk_scheduler_->disk_manager_->ReadPage(page_id, page_tofetch->data_);
+    guard.lock();
   }
   page_tofetch->page_id_ = page_id;
   page_tofetch->is_dirty_ = true;
@@ -143,17 +145,19 @@ auto BufferPoolManager::FlushPage(page_id_t page_id) -> bool {
   }
   frame_id_t frame_target = page_table_[page_id];
   auto page_target = &pages_[frame_target];
+  guard.unlock();
   disk_scheduler_->disk_manager_->WritePage(page_id, page_target->data_);
+  guard.lock();
   page_target->is_dirty_ = false;
   return true;
 }
 
 void BufferPoolManager::FlushAllPages() {
-  std::unique_lock<std::mutex> guard(latch_);
+  // std::unique_lock<std::mutex> guard(latch_);
   for (auto [page_id_now, frame_id_now] : page_table_) {
-    guard.unlock();
+    // guard.unlock();
     FlushPage(page_id_now);
-    guard.lock();
+    // guard.lock();
   }
   // // guard.unlock();
 }
@@ -188,13 +192,13 @@ auto BufferPoolManager::FetchPageBasic(page_id_t page_id) -> BasicPageGuard {
 auto BufferPoolManager::FetchPageRead(page_id_t page_id) -> ReadPageGuard {
   // std::cout<<"Before Return"<<'\n';
   Page *page_tofetch = FetchPage(page_id);
-  // page_tofetch->RLatch();
+  page_tofetch->RLatch();
   return {this, page_tofetch};
 }
 
 auto BufferPoolManager::FetchPageWrite(page_id_t page_id) -> WritePageGuard {
   Page *page_tofetch = FetchPage(page_id);
-  // page_tofetch->WLatch();
+  page_tofetch->WLatch();
   return {this, page_tofetch};
 }
 
