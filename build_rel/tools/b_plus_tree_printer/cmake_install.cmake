@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/tools/b_plus_tree_printer
+# Install script for directory: /home/aakennes/code/database/Database/tools/b_plus_tree_printer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

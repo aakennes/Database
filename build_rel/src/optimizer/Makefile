@@ -57,10 +57,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/aakennes/code/database/Database/bustub/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
+	cd /home/aakennes/code/database/Database/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/aakennes/code/database/Database/bustub/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /home/aakennes/code/database/Database/bustub/build_rel/CPackSourceConfig.cmake
+	cd /home/aakennes/code/database/Database/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /home/aakennes/code/database/Database/build_rel/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles /home/aakennes/code/database/Database/bustub/build_rel/src/optimizer//CMakeFiles/progress.marks
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles 0
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/build_rel/CMakeFiles /home/aakennes/code/database/Database/build_rel/src/optimizer//CMakeFiles/progress.marks
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/build_rel/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/clean
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/preinstall
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/preinstall
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/optimizer/CMakeFiles/bustub_optimizer.dir/rule:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/CMakeFiles/bustub_optimizer.dir/rule
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/optimizer/CMakeFiles/bustub_optimizer.dir/rule
 .PHONY : src/optimizer/CMakeFiles/bustub_optimizer.dir/rule
 
 # Convenience name for target.
@@ -202,15 +202,39 @@ bustub_optimizer: src/optimizer/CMakeFiles/bustub_optimizer.dir/rule
 
 # fast build rule for target.
 bustub_optimizer/fast:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/build
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/build
 .PHONY : bustub_optimizer/fast
+
+column_pruning.o: column_pruning.cpp.o
+.PHONY : column_pruning.o
+
+# target to build an object file
+column_pruning.cpp.o:
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/column_pruning.cpp.o
+.PHONY : column_pruning.cpp.o
+
+column_pruning.i: column_pruning.cpp.i
+.PHONY : column_pruning.i
+
+# target to preprocess a source file
+column_pruning.cpp.i:
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/column_pruning.cpp.i
+.PHONY : column_pruning.cpp.i
+
+column_pruning.s: column_pruning.cpp.s
+.PHONY : column_pruning.s
+
+# target to generate assembly for a file
+column_pruning.cpp.s:
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/column_pruning.cpp.s
+.PHONY : column_pruning.cpp.s
 
 eliminate_true_filter.o: eliminate_true_filter.cpp.o
 .PHONY : eliminate_true_filter.o
 
 # target to build an object file
 eliminate_true_filter.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o
 .PHONY : eliminate_true_filter.cpp.o
 
 eliminate_true_filter.i: eliminate_true_filter.cpp.i
@@ -218,7 +242,7 @@ eliminate_true_filter.i: eliminate_true_filter.cpp.i
 
 # target to preprocess a source file
 eliminate_true_filter.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.i
 .PHONY : eliminate_true_filter.cpp.i
 
 eliminate_true_filter.s: eliminate_true_filter.cpp.s
@@ -226,7 +250,7 @@ eliminate_true_filter.s: eliminate_true_filter.cpp.s
 
 # target to generate assembly for a file
 eliminate_true_filter.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.s
 .PHONY : eliminate_true_filter.cpp.s
 
 merge_filter_nlj.o: merge_filter_nlj.cpp.o
@@ -234,7 +258,7 @@ merge_filter_nlj.o: merge_filter_nlj.cpp.o
 
 # target to build an object file
 merge_filter_nlj.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o
 .PHONY : merge_filter_nlj.cpp.o
 
 merge_filter_nlj.i: merge_filter_nlj.cpp.i
@@ -242,7 +266,7 @@ merge_filter_nlj.i: merge_filter_nlj.cpp.i
 
 # target to preprocess a source file
 merge_filter_nlj.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.i
 .PHONY : merge_filter_nlj.cpp.i
 
 merge_filter_nlj.s: merge_filter_nlj.cpp.s
@@ -250,7 +274,7 @@ merge_filter_nlj.s: merge_filter_nlj.cpp.s
 
 # target to generate assembly for a file
 merge_filter_nlj.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.s
 .PHONY : merge_filter_nlj.cpp.s
 
 merge_filter_scan.o: merge_filter_scan.cpp.o
@@ -258,7 +282,7 @@ merge_filter_scan.o: merge_filter_scan.cpp.o
 
 # target to build an object file
 merge_filter_scan.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.o
 .PHONY : merge_filter_scan.cpp.o
 
 merge_filter_scan.i: merge_filter_scan.cpp.i
@@ -266,7 +290,7 @@ merge_filter_scan.i: merge_filter_scan.cpp.i
 
 # target to preprocess a source file
 merge_filter_scan.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.i
 .PHONY : merge_filter_scan.cpp.i
 
 merge_filter_scan.s: merge_filter_scan.cpp.s
@@ -274,7 +298,7 @@ merge_filter_scan.s: merge_filter_scan.cpp.s
 
 # target to generate assembly for a file
 merge_filter_scan.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_filter_scan.cpp.s
 .PHONY : merge_filter_scan.cpp.s
 
 merge_projection.o: merge_projection.cpp.o
@@ -282,7 +306,7 @@ merge_projection.o: merge_projection.cpp.o
 
 # target to build an object file
 merge_projection.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.o
 .PHONY : merge_projection.cpp.o
 
 merge_projection.i: merge_projection.cpp.i
@@ -290,7 +314,7 @@ merge_projection.i: merge_projection.cpp.i
 
 # target to preprocess a source file
 merge_projection.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.i
 .PHONY : merge_projection.cpp.i
 
 merge_projection.s: merge_projection.cpp.s
@@ -298,7 +322,7 @@ merge_projection.s: merge_projection.cpp.s
 
 # target to generate assembly for a file
 merge_projection.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/merge_projection.cpp.s
 .PHONY : merge_projection.cpp.s
 
 nlj_as_hash_join.o: nlj_as_hash_join.cpp.o
@@ -306,7 +330,7 @@ nlj_as_hash_join.o: nlj_as_hash_join.cpp.o
 
 # target to build an object file
 nlj_as_hash_join.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.o
 .PHONY : nlj_as_hash_join.cpp.o
 
 nlj_as_hash_join.i: nlj_as_hash_join.cpp.i
@@ -314,7 +338,7 @@ nlj_as_hash_join.i: nlj_as_hash_join.cpp.i
 
 # target to preprocess a source file
 nlj_as_hash_join.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.i
 .PHONY : nlj_as_hash_join.cpp.i
 
 nlj_as_hash_join.s: nlj_as_hash_join.cpp.s
@@ -322,7 +346,7 @@ nlj_as_hash_join.s: nlj_as_hash_join.cpp.s
 
 # target to generate assembly for a file
 nlj_as_hash_join.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_hash_join.cpp.s
 .PHONY : nlj_as_hash_join.cpp.s
 
 nlj_as_index_join.o: nlj_as_index_join.cpp.o
@@ -330,7 +354,7 @@ nlj_as_index_join.o: nlj_as_index_join.cpp.o
 
 # target to build an object file
 nlj_as_index_join.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.o
 .PHONY : nlj_as_index_join.cpp.o
 
 nlj_as_index_join.i: nlj_as_index_join.cpp.i
@@ -338,7 +362,7 @@ nlj_as_index_join.i: nlj_as_index_join.cpp.i
 
 # target to preprocess a source file
 nlj_as_index_join.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.i
 .PHONY : nlj_as_index_join.cpp.i
 
 nlj_as_index_join.s: nlj_as_index_join.cpp.s
@@ -346,7 +370,7 @@ nlj_as_index_join.s: nlj_as_index_join.cpp.s
 
 # target to generate assembly for a file
 nlj_as_index_join.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/nlj_as_index_join.cpp.s
 .PHONY : nlj_as_index_join.cpp.s
 
 optimizer.o: optimizer.cpp.o
@@ -354,7 +378,7 @@ optimizer.o: optimizer.cpp.o
 
 # target to build an object file
 optimizer.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.o
 .PHONY : optimizer.cpp.o
 
 optimizer.i: optimizer.cpp.i
@@ -362,7 +386,7 @@ optimizer.i: optimizer.cpp.i
 
 # target to preprocess a source file
 optimizer.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.i
 .PHONY : optimizer.cpp.i
 
 optimizer.s: optimizer.cpp.s
@@ -370,7 +394,7 @@ optimizer.s: optimizer.cpp.s
 
 # target to generate assembly for a file
 optimizer.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer.cpp.s
 .PHONY : optimizer.cpp.s
 
 optimizer_custom_rules.o: optimizer_custom_rules.cpp.o
@@ -378,7 +402,7 @@ optimizer_custom_rules.o: optimizer_custom_rules.cpp.o
 
 # target to build an object file
 optimizer_custom_rules.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o
 .PHONY : optimizer_custom_rules.cpp.o
 
 optimizer_custom_rules.i: optimizer_custom_rules.cpp.i
@@ -386,7 +410,7 @@ optimizer_custom_rules.i: optimizer_custom_rules.cpp.i
 
 # target to preprocess a source file
 optimizer_custom_rules.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.i
 .PHONY : optimizer_custom_rules.cpp.i
 
 optimizer_custom_rules.s: optimizer_custom_rules.cpp.s
@@ -394,7 +418,7 @@ optimizer_custom_rules.s: optimizer_custom_rules.cpp.s
 
 # target to generate assembly for a file
 optimizer_custom_rules.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.s
 .PHONY : optimizer_custom_rules.cpp.s
 
 optimizer_internal.o: optimizer_internal.cpp.o
@@ -402,7 +426,7 @@ optimizer_internal.o: optimizer_internal.cpp.o
 
 # target to build an object file
 optimizer_internal.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.o
 .PHONY : optimizer_internal.cpp.o
 
 optimizer_internal.i: optimizer_internal.cpp.i
@@ -410,7 +434,7 @@ optimizer_internal.i: optimizer_internal.cpp.i
 
 # target to preprocess a source file
 optimizer_internal.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.i
 .PHONY : optimizer_internal.cpp.i
 
 optimizer_internal.s: optimizer_internal.cpp.s
@@ -418,7 +442,7 @@ optimizer_internal.s: optimizer_internal.cpp.s
 
 # target to generate assembly for a file
 optimizer_internal.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_internal.cpp.s
 .PHONY : optimizer_internal.cpp.s
 
 order_by_index_scan.o: order_by_index_scan.cpp.o
@@ -426,7 +450,7 @@ order_by_index_scan.o: order_by_index_scan.cpp.o
 
 # target to build an object file
 order_by_index_scan.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.o
 .PHONY : order_by_index_scan.cpp.o
 
 order_by_index_scan.i: order_by_index_scan.cpp.i
@@ -434,7 +458,7 @@ order_by_index_scan.i: order_by_index_scan.cpp.i
 
 # target to preprocess a source file
 order_by_index_scan.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.i
 .PHONY : order_by_index_scan.cpp.i
 
 order_by_index_scan.s: order_by_index_scan.cpp.s
@@ -442,7 +466,7 @@ order_by_index_scan.s: order_by_index_scan.cpp.s
 
 # target to generate assembly for a file
 order_by_index_scan.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/order_by_index_scan.cpp.s
 .PHONY : order_by_index_scan.cpp.s
 
 seqscan_as_indexscan.o: seqscan_as_indexscan.cpp.o
@@ -450,7 +474,7 @@ seqscan_as_indexscan.o: seqscan_as_indexscan.cpp.o
 
 # target to build an object file
 seqscan_as_indexscan.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/seqscan_as_indexscan.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/seqscan_as_indexscan.cpp.o
 .PHONY : seqscan_as_indexscan.cpp.o
 
 seqscan_as_indexscan.i: seqscan_as_indexscan.cpp.i
@@ -458,7 +482,7 @@ seqscan_as_indexscan.i: seqscan_as_indexscan.cpp.i
 
 # target to preprocess a source file
 seqscan_as_indexscan.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/seqscan_as_indexscan.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/seqscan_as_indexscan.cpp.i
 .PHONY : seqscan_as_indexscan.cpp.i
 
 seqscan_as_indexscan.s: seqscan_as_indexscan.cpp.s
@@ -466,7 +490,7 @@ seqscan_as_indexscan.s: seqscan_as_indexscan.cpp.s
 
 # target to generate assembly for a file
 seqscan_as_indexscan.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/seqscan_as_indexscan.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/seqscan_as_indexscan.cpp.s
 .PHONY : seqscan_as_indexscan.cpp.s
 
 sort_limit_as_topn.o: sort_limit_as_topn.cpp.o
@@ -474,7 +498,7 @@ sort_limit_as_topn.o: sort_limit_as_topn.cpp.o
 
 # target to build an object file
 sort_limit_as_topn.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.o
 .PHONY : sort_limit_as_topn.cpp.o
 
 sort_limit_as_topn.i: sort_limit_as_topn.cpp.i
@@ -482,7 +506,7 @@ sort_limit_as_topn.i: sort_limit_as_topn.cpp.i
 
 # target to preprocess a source file
 sort_limit_as_topn.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.i
 .PHONY : sort_limit_as_topn.cpp.i
 
 sort_limit_as_topn.s: sort_limit_as_topn.cpp.s
@@ -490,7 +514,7 @@ sort_limit_as_topn.s: sort_limit_as_topn.cpp.s
 
 # target to generate assembly for a file
 sort_limit_as_topn.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/optimizer/CMakeFiles/bustub_optimizer.dir/build.make src/optimizer/CMakeFiles/bustub_optimizer.dir/sort_limit_as_topn.cpp.s
 .PHONY : sort_limit_as_topn.cpp.s
 
 # Help Target
@@ -509,6 +533,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... bustub_optimizer"
+	@echo "... column_pruning.o"
+	@echo "... column_pruning.i"
+	@echo "... column_pruning.s"
 	@echo "... eliminate_true_filter.o"
 	@echo "... eliminate_true_filter.i"
 	@echo "... eliminate_true_filter.s"
@@ -556,6 +583,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

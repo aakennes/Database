@@ -1,5 +1,5 @@
 src/storage/table/CMakeFiles/bustub_storage_table.dir/tuple.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/storage/table/tuple.cpp \
+  /home/aakennes/code/database/Database/src/storage/table/tuple.cpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cassert \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -181,8 +181,8 @@ src/storage/table/CMakeFiles/bustub_storage_table.dir/tuple.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/table/tuple.h \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/schema.h \
+  /home/aakennes/code/database/Database/src/include/storage/table/tuple.h \
+  /home/aakennes/code/database/Database/src/include/catalog/schema.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/memory \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_tempbuf.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_raw_storage_iter.h \
@@ -209,8 +209,8 @@ src/storage/table/CMakeFiles/bustub_storage_table.dir/tuple.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/execution_defs.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/enable_special_members.h \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/column.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/format.h \
+  /home/aakennes/code/database/Database/src/include/catalog/column.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/format.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cmath \
   /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -237,24 +237,24 @@ src/storage/table/CMakeFiles/bustub_storage_table.dir/tuple.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/tr1/riemann_zeta.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstring \
   /usr/include/string.h /usr/include/strings.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/core.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/core.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstddef \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stream_iterator.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/exception.h \
+  /home/aakennes/code/database/Database/src/include/common/exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/atomic \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type_id.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/macros.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/config.h \
+  /home/aakennes/code/database/Database/src/include/type/type.h \
+  /home/aakennes/code/database/Database/src/include/type/type_id.h \
+  /home/aakennes/code/database/Database/src/include/common/macros.h \
+  /home/aakennes/code/database/Database/src/include/common/config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/chrono \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ratio \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ctime \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/parse_numbers.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/rid.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/value.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/limits.h \
+  /home/aakennes/code/database/Database/src/include/common/rid.h \
+  /home/aakennes/code/database/Database/src/include/type/value.h \
+  /home/aakennes/code/database/Database/src/include/type/limits.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cfloat \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/float.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/climits \

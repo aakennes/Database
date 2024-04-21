@@ -1,6 +1,6 @@
 src/catalog/CMakeFiles/bustub_catalog.dir/schema.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/catalog/schema.cpp \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/schema.h \
+  /home/aakennes/code/database/Database/src/catalog/schema.cpp \
+  /home/aakennes/code/database/Database/src/include/catalog/schema.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/memory \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algobase.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -179,8 +179,8 @@ src/catalog/CMakeFiles/bustub_catalog.dir/schema.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/column.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/format.h \
+  /home/aakennes/code/database/Database/src/include/catalog/column.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/format.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cmath \
   /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -210,7 +210,7 @@ src/catalog/CMakeFiles/bustub_catalog.dir/schema.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/core.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/core.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstddef \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stream_iterator.h \
@@ -220,7 +220,7 @@ src/catalog/CMakeFiles/bustub_catalog.dir/schema.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/common/exception.h \
+  /home/aakennes/code/database/Database/src/include/common/exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/atomic \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ostream \
@@ -237,9 +237,9 @@ src/catalog/CMakeFiles/bustub_catalog.dir/schema.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ostream.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/istream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/istream.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type_id.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/macros.h \
+  /home/aakennes/code/database/Database/src/include/type/type.h \
+  /home/aakennes/code/database/Database/src/include/type/type_id.h \
+  /home/aakennes/code/database/Database/src/include/common/macros.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cassert \
   /usr/include/assert.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/sstream \

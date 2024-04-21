@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/src/binder/statement
+# Install script for directory: /home/aakennes/code/database/Database/src/binder/statement
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

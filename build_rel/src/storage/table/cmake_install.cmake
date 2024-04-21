@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/src/storage/table
+# Install script for directory: /home/aakennes/code/database/Database/src/storage/table
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

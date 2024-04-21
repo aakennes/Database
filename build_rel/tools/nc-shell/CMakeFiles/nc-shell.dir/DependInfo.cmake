@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/aakennes/code/database/Database/bustub/tools/nc-shell/nc-shell.cpp" "tools/nc-shell/CMakeFiles/nc-shell.dir/nc-shell.cpp.o" "gcc" "tools/nc-shell/CMakeFiles/nc-shell.dir/nc-shell.cpp.o.d"
+  "/home/aakennes/code/database/Database/tools/nc-shell/nc-shell.cpp" "tools/nc-shell/CMakeFiles/nc-shell.dir/nc-shell.cpp.o" "gcc" "tools/nc-shell/CMakeFiles/nc-shell.dir/nc-shell.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

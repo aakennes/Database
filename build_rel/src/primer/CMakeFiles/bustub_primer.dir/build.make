@@ -53,10 +53,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 # Include any dependencies generated for this target.
 include src/primer/CMakeFiles/bustub_primer.dir/depend.make
@@ -70,60 +70,60 @@ include src/primer/CMakeFiles/bustub_primer.dir/progress.make
 include src/primer/CMakeFiles/bustub_primer.dir/flags.make
 
 src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o: src/primer/CMakeFiles/bustub_primer.dir/flags.make
-src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o: /home/aakennes/code/database/Database/bustub/src/primer/orset.cpp
+src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o: /home/aakennes/code/database/Database/src/primer/orset.cpp
 src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o: src/primer/CMakeFiles/bustub_primer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o -MF CMakeFiles/bustub_primer.dir/orset.cpp.o.d -o CMakeFiles/bustub_primer.dir/orset.cpp.o -c /home/aakennes/code/database/Database/bustub/src/primer/orset.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o -MF CMakeFiles/bustub_primer.dir/orset.cpp.o.d -o CMakeFiles/bustub_primer.dir/orset.cpp.o -c /home/aakennes/code/database/Database/src/primer/orset.cpp
 
 src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_primer.dir/orset.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/primer/orset.cpp > CMakeFiles/bustub_primer.dir/orset.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/primer/orset.cpp > CMakeFiles/bustub_primer.dir/orset.cpp.i
 
 src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_primer.dir/orset.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/primer/orset.cpp -o CMakeFiles/bustub_primer.dir/orset.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/primer/orset.cpp -o CMakeFiles/bustub_primer.dir/orset.cpp.s
 
 src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o: src/primer/CMakeFiles/bustub_primer.dir/flags.make
-src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o: /home/aakennes/code/database/Database/bustub/src/primer/orset_driver.cpp
+src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o: /home/aakennes/code/database/Database/src/primer/orset_driver.cpp
 src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o: src/primer/CMakeFiles/bustub_primer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o -MF CMakeFiles/bustub_primer.dir/orset_driver.cpp.o.d -o CMakeFiles/bustub_primer.dir/orset_driver.cpp.o -c /home/aakennes/code/database/Database/bustub/src/primer/orset_driver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o -MF CMakeFiles/bustub_primer.dir/orset_driver.cpp.o.d -o CMakeFiles/bustub_primer.dir/orset_driver.cpp.o -c /home/aakennes/code/database/Database/src/primer/orset_driver.cpp
 
 src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_primer.dir/orset_driver.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/primer/orset_driver.cpp > CMakeFiles/bustub_primer.dir/orset_driver.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/primer/orset_driver.cpp > CMakeFiles/bustub_primer.dir/orset_driver.cpp.i
 
 src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_primer.dir/orset_driver.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/primer/orset_driver.cpp -o CMakeFiles/bustub_primer.dir/orset_driver.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/primer/orset_driver.cpp -o CMakeFiles/bustub_primer.dir/orset_driver.cpp.s
 
 src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o: src/primer/CMakeFiles/bustub_primer.dir/flags.make
-src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o: /home/aakennes/code/database/Database/bustub/src/primer/trie.cpp
+src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o: /home/aakennes/code/database/Database/src/primer/trie.cpp
 src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o: src/primer/CMakeFiles/bustub_primer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o -MF CMakeFiles/bustub_primer.dir/trie.cpp.o.d -o CMakeFiles/bustub_primer.dir/trie.cpp.o -c /home/aakennes/code/database/Database/bustub/src/primer/trie.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o -MF CMakeFiles/bustub_primer.dir/trie.cpp.o.d -o CMakeFiles/bustub_primer.dir/trie.cpp.o -c /home/aakennes/code/database/Database/src/primer/trie.cpp
 
 src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_primer.dir/trie.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/primer/trie.cpp > CMakeFiles/bustub_primer.dir/trie.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/primer/trie.cpp > CMakeFiles/bustub_primer.dir/trie.cpp.i
 
 src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_primer.dir/trie.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/primer/trie.cpp -o CMakeFiles/bustub_primer.dir/trie.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/primer/trie.cpp -o CMakeFiles/bustub_primer.dir/trie.cpp.s
 
 src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o: src/primer/CMakeFiles/bustub_primer.dir/flags.make
-src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o: /home/aakennes/code/database/Database/bustub/src/primer/trie_store.cpp
+src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o: /home/aakennes/code/database/Database/src/primer/trie_store.cpp
 src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o: src/primer/CMakeFiles/bustub_primer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o -MF CMakeFiles/bustub_primer.dir/trie_store.cpp.o.d -o CMakeFiles/bustub_primer.dir/trie_store.cpp.o -c /home/aakennes/code/database/Database/bustub/src/primer/trie_store.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o -MF CMakeFiles/bustub_primer.dir/trie_store.cpp.o.d -o CMakeFiles/bustub_primer.dir/trie_store.cpp.o -c /home/aakennes/code/database/Database/src/primer/trie_store.cpp
 
 src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_primer.dir/trie_store.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/primer/trie_store.cpp > CMakeFiles/bustub_primer.dir/trie_store.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/primer/trie_store.cpp > CMakeFiles/bustub_primer.dir/trie_store.cpp.i
 
 src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_primer.dir/trie_store.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/primer/trie_store.cpp -o CMakeFiles/bustub_primer.dir/trie_store.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/primer/trie_store.cpp -o CMakeFiles/bustub_primer.dir/trie_store.cpp.s
 
 bustub_primer: src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o
 bustub_primer: src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o
@@ -137,10 +137,10 @@ src/primer/CMakeFiles/bustub_primer.dir/build: bustub_primer
 .PHONY : src/primer/CMakeFiles/bustub_primer.dir/build
 
 src/primer/CMakeFiles/bustub_primer.dir/clean:
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/primer && $(CMAKE_COMMAND) -P CMakeFiles/bustub_primer.dir/cmake_clean.cmake
+	cd /home/aakennes/code/database/Database/build_rel/src/primer && $(CMAKE_COMMAND) -P CMakeFiles/bustub_primer.dir/cmake_clean.cmake
 .PHONY : src/primer/CMakeFiles/bustub_primer.dir/clean
 
 src/primer/CMakeFiles/bustub_primer.dir/depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub/src/primer /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel/src/primer /home/aakennes/code/database/Database/bustub/build_rel/src/primer/CMakeFiles/bustub_primer.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database /home/aakennes/code/database/Database/src/primer /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel/src/primer /home/aakennes/code/database/Database/build_rel/src/primer/CMakeFiles/bustub_primer.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/primer/CMakeFiles/bustub_primer.dir/depend
 

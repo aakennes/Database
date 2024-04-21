@@ -53,10 +53,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 # Utility rule file for submit-p2.
 
@@ -67,7 +67,7 @@ include CMakeFiles/submit-p2.dir/compiler_depend.make
 include CMakeFiles/submit-p2.dir/progress.make
 
 CMakeFiles/submit-p2:
-	cd /home/aakennes/code/database/Database/bustub && zip project2-submission.zip src/include/storage/page/page_guard.h src/storage/page/page_guard.cpp src/include/storage/page/extendible_htable_bucket_page.h src/storage/page/extendible_htable_bucket_page.cpp src/include/storage/page/extendible_htable_directory_page.h src/storage/page/extendible_htable_directory_page.cpp src/include/storage/page/extendible_htable_header_page.h src/storage/page/extendible_htable_header_page.cpp src/include/container/disk/hash/disk_extendible_hash_table.h src/container/disk/hash/disk_extendible_hash_table.cpp src/include/buffer/lru_k_replacer.h src/buffer/lru_k_replacer.cpp src/include/buffer/buffer_pool_manager.h src/buffer/buffer_pool_manager.cpp src/include/storage/disk/disk_scheduler.h src/storage/disk/disk_scheduler.cpp src/storage/page/page_guard.cpp src/include/storage/page/page_guard.h
+	cd /home/aakennes/code/database/Database && zip project2-submission.zip src/include/storage/page/page_guard.h src/storage/page/page_guard.cpp src/include/storage/page/extendible_htable_bucket_page.h src/storage/page/extendible_htable_bucket_page.cpp src/include/storage/page/extendible_htable_directory_page.h src/storage/page/extendible_htable_directory_page.cpp src/include/storage/page/extendible_htable_header_page.h src/storage/page/extendible_htable_header_page.cpp src/include/container/disk/hash/disk_extendible_hash_table.h src/container/disk/hash/disk_extendible_hash_table.cpp src/include/buffer/lru_k_replacer.h src/buffer/lru_k_replacer.cpp src/include/buffer/buffer_pool_manager.h src/buffer/buffer_pool_manager.cpp src/include/storage/disk/disk_scheduler.h src/storage/disk/disk_scheduler.cpp src/storage/page/page_guard.cpp src/include/storage/page/page_guard.h
 
 submit-p2: CMakeFiles/submit-p2
 submit-p2: CMakeFiles/submit-p2.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/submit-p2.dir/clean:
 .PHONY : CMakeFiles/submit-p2.dir/clean
 
 CMakeFiles/submit-p2.dir/depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles/submit-p2.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database /home/aakennes/code/database/Database /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel/CMakeFiles/submit-p2.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/submit-p2.dir/depend
 

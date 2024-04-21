@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/aakennes/code/database/Database/bustub/tools/backtrace.cpp" "test/CMakeFiles/trie_noncopy_test.dir/__/tools/backtrace.cpp.o" "gcc" "test/CMakeFiles/trie_noncopy_test.dir/__/tools/backtrace.cpp.o.d"
-  "/home/aakennes/code/database/Database/bustub/test/primer/trie_noncopy_test.cpp" "test/CMakeFiles/trie_noncopy_test.dir/primer/trie_noncopy_test.cpp.o" "gcc" "test/CMakeFiles/trie_noncopy_test.dir/primer/trie_noncopy_test.cpp.o.d"
+  "/home/aakennes/code/database/Database/tools/backtrace.cpp" "test/CMakeFiles/trie_noncopy_test.dir/__/tools/backtrace.cpp.o" "gcc" "test/CMakeFiles/trie_noncopy_test.dir/__/tools/backtrace.cpp.o.d"
+  "/home/aakennes/code/database/Database/test/primer/trie_noncopy_test.cpp" "test/CMakeFiles/trie_noncopy_test.dir/primer/trie_noncopy_test.cpp.o" "gcc" "test/CMakeFiles/trie_noncopy_test.dir/primer/trie_noncopy_test.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/third_party/fmt
+# Install script for directory: /home/aakennes/code/database/Database/third_party/fmt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,31 +43,31 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/aakennes/code/database/Database/bustub/build_rel/lib/libfmt.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/aakennes/code/database/Database/build_rel/lib/libfmt.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/fmt" TYPE FILE FILES
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/args.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/chrono.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/color.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/compile.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/core.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/format.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/format-inl.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/os.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/ostream.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/printf.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/ranges.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/std.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/xchar.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/args.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/chrono.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/color.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/compile.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/core.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/format.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/format-inl.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/os.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/ostream.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/printf.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/ranges.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/std.h"
+    "/home/aakennes/code/database/Database/third_party/fmt/include/fmt/xchar.h"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/fmt" TYPE FILE FILES
-    "/home/aakennes/code/database/Database/bustub/build_rel/third_party/fmt/fmt-config.cmake"
-    "/home/aakennes/code/database/Database/bustub/build_rel/third_party/fmt/fmt-config-version.cmake"
+    "/home/aakennes/code/database/Database/build_rel/third_party/fmt/fmt-config.cmake"
+    "/home/aakennes/code/database/Database/build_rel/third_party/fmt/fmt-config-version.cmake"
     )
 endif()
 
@@ -75,7 +75,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/fmt/fmt-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/fmt/fmt-targets.cmake"
-         "/home/aakennes/code/database/Database/bustub/build_rel/third_party/fmt/CMakeFiles/Export/b834597d9b1628ff12ae4314c3a2e4b8/fmt-targets.cmake")
+         "/home/aakennes/code/database/Database/build_rel/third_party/fmt/CMakeFiles/Export/b834597d9b1628ff12ae4314c3a2e4b8/fmt-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/fmt/fmt-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -88,13 +88,13 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/fmt" TYPE FILE FILES "/home/aakennes/code/database/Database/bustub/build_rel/third_party/fmt/CMakeFiles/Export/b834597d9b1628ff12ae4314c3a2e4b8/fmt-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/fmt" TYPE FILE FILES "/home/aakennes/code/database/Database/build_rel/third_party/fmt/CMakeFiles/Export/b834597d9b1628ff12ae4314c3a2e4b8/fmt-targets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/fmt" TYPE FILE FILES "/home/aakennes/code/database/Database/bustub/build_rel/third_party/fmt/CMakeFiles/Export/b834597d9b1628ff12ae4314c3a2e4b8/fmt-targets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/fmt" TYPE FILE FILES "/home/aakennes/code/database/Database/build_rel/third_party/fmt/CMakeFiles/Export/b834597d9b1628ff12ae4314c3a2e4b8/fmt-targets-release.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aakennes/code/database/Database/bustub/build_rel/third_party/fmt/fmt.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aakennes/code/database/Database/build_rel/third_party/fmt/fmt.pc")
 endif()
 

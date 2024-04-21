@@ -1,6 +1,6 @@
 src/common/CMakeFiles/bustub_common.dir/config.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/common/config.cpp \
-  /home/aakennes/code/database/Database/bustub/src/include/common/config.h \
+  /home/aakennes/code/database/Database/src/common/config.cpp \
+  /home/aakennes/code/database/Database/src/include/common/config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/atomic \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_base.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \

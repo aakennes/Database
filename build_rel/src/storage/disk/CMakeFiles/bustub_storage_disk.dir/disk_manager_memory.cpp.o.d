@@ -1,6 +1,6 @@
 src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager_memory.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/storage/disk/disk_manager_memory.cpp \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/disk/disk_manager_memory.h \
+  /home/aakennes/code/database/Database/src/storage/disk/disk_manager_memory.cpp \
+  /home/aakennes/code/database/Database/src/include/storage/disk/disk_manager_memory.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/array \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/utility \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -226,16 +226,16 @@ src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager_memory.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/common/config.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/exception.h \
+  /home/aakennes/code/database/Database/src/include/common/config.h \
+  /home/aakennes/code/database/Database/src/include/common/exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type_id.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/logger.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/core.h \
+  /home/aakennes/code/database/Database/src/include/type/type.h \
+  /home/aakennes/code/database/Database/src/include/type/type_id.h \
+  /home/aakennes/code/database/Database/src/include/common/logger.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/core.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstddef \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stream_iterator.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/disk/disk_manager.h \
+  /home/aakennes/code/database/Database/src/include/storage/disk/disk_manager.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cassert \
   /usr/include/assert.h

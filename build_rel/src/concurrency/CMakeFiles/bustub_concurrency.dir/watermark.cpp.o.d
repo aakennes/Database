@@ -1,6 +1,6 @@
 src/concurrency/CMakeFiles/bustub_concurrency.dir/watermark.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/concurrency/watermark.cpp \
-  /home/aakennes/code/database/Database/bustub/src/include/concurrency/watermark.h \
+  /home/aakennes/code/database/Database/src/concurrency/watermark.cpp \
+  /home/aakennes/code/database/Database/src/include/concurrency/watermark.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/unordered_map \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/type_traits \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -58,8 +58,8 @@ src/concurrency/CMakeFiles/bustub_concurrency.dir/watermark.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/node_handle.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/erase_if.h \
-  /home/aakennes/code/database/Database/bustub/src/include/concurrency/transaction.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/format.h \
+  /home/aakennes/code/database/Database/src/include/concurrency/transaction.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/format.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cmath \
   /usr/include/math.h \
   /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -213,7 +213,7 @@ src/concurrency/CMakeFiles/bustub_concurrency.dir/watermark.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/core.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/core.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstddef \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stream_iterator.h \
@@ -247,11 +247,11 @@ src/concurrency/CMakeFiles/bustub_concurrency.dir/watermark.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/common/config.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/logger.h \
-  /home/aakennes/code/database/Database/bustub/src/include/execution/expressions/abstract_expression.h \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/column.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/exception.h \
+  /home/aakennes/code/database/Database/src/include/common/config.h \
+  /home/aakennes/code/database/Database/src/include/common/logger.h \
+  /home/aakennes/code/database/Database/src/include/execution/expressions/abstract_expression.h \
+  /home/aakennes/code/database/Database/src/include/catalog/column.h \
+  /home/aakennes/code/database/Database/src/include/common/exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ios \
@@ -267,19 +267,19 @@ src/concurrency/CMakeFiles/bustub_concurrency.dir/watermark.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ostream.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/istream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/istream.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type_id.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/macros.h \
+  /home/aakennes/code/database/Database/src/include/type/type.h \
+  /home/aakennes/code/database/Database/src/include/type/type_id.h \
+  /home/aakennes/code/database/Database/src/include/common/macros.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cassert \
   /usr/include/assert.h \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/schema.h \
+  /home/aakennes/code/database/Database/src/include/catalog/schema.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/table/tuple.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/rid.h \
+  /home/aakennes/code/database/Database/src/include/storage/table/tuple.h \
+  /home/aakennes/code/database/Database/src/include/common/rid.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/sstream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/sstream.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/type/value.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/limits.h \
+  /home/aakennes/code/database/Database/src/include/type/value.h \
+  /home/aakennes/code/database/Database/src/include/type/limits.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cfloat \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/float.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/climits \
@@ -290,6 +290,6 @@ src/concurrency/CMakeFiles/bustub_concurrency.dir/watermark.cpp.o: \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/rwlatch.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/page.h \
+  /home/aakennes/code/database/Database/src/include/common/rwlatch.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/shared_mutex

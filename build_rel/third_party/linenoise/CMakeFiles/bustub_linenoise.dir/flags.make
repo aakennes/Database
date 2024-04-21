@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/aakennes/code/database/Database/bustub/src -I/home/aakennes/code/database/Database/bustub/src/include -I/home/aakennes/code/database/Database/bustub/test/include -I/home/aakennes/code/database/Database/bustub/third_party -I/home/aakennes/code/database/Database/bustub/third_party/fmt/include -I/home/aakennes/code/database/Database/bustub/third_party/libpg_query/include -I/home/aakennes/code/database/Database/bustub/third_party/argparse/include -I/home/aakennes/code/database/Database/bustub/third_party/cpp_random_distributions -I/home/aakennes/code/database/Database/bustub/third_party/backward-cpp/include
+C_INCLUDES = -I/home/aakennes/code/database/Database/src -I/home/aakennes/code/database/Database/src/include -I/home/aakennes/code/database/Database/test/include -I/home/aakennes/code/database/Database/third_party -I/home/aakennes/code/database/Database/third_party/fmt/include -I/home/aakennes/code/database/Database/third_party/libpg_query/include -I/home/aakennes/code/database/Database/third_party/argparse/include -I/home/aakennes/code/database/Database/third_party/cpp_random_distributions -I/home/aakennes/code/database/Database/third_party/backward-cpp/include
 
 C_FLAGS = -O3 -DNDEBUG -fPIC
 

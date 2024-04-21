@@ -1,6 +1,6 @@
 src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/primer/trie_store.cpp \
-  /home/aakennes/code/database/Database/bustub/src/include/primer/trie_store.h \
+  /home/aakennes/code/database/Database/src/primer/trie_store.cpp \
+  /home/aakennes/code/database/Database/src/include/primer/trie_store.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/utility \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -162,7 +162,7 @@ src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o: \
   /usr/include/x86_64-linux-gnu/bits/stdio.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/charconv.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/basic_string.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/primer/trie.h \
+  /home/aakennes/code/database/Database/src/include/primer/trie.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algo.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/algorithmfwd.h \
@@ -216,7 +216,7 @@ src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/shared_ptr_atomic.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward/auto_ptr.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_memory_defs.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/exception.h \
+  /home/aakennes/code/database/Database/src/include/common/exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ios \
@@ -238,5 +238,5 @@ src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ostream.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/istream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/istream.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type_id.h
+  /home/aakennes/code/database/Database/src/include/type/type.h \
+  /home/aakennes/code/database/Database/src/include/type/type_id.h

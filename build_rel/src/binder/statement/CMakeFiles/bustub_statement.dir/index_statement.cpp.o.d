@@ -1,6 +1,6 @@
 src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/binder/statement/index_statement.cpp \
-  /home/aakennes/code/database/Database/bustub/src/include/binder/statement/index_statement.h \
+  /home/aakennes/code/database/Database/src/binder/statement/index_statement.cpp \
+  /home/aakennes/code/database/Database/src/include/binder/statement/index_statement.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/memory \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algobase.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -177,16 +177,16 @@ src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/binder/bound_statement.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/enums/statement_type.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/config.h \
+  /home/aakennes/code/database/Database/src/include/binder/bound_statement.h \
+  /home/aakennes/code/database/Database/src/include/common/enums/statement_type.h \
+  /home/aakennes/code/database/Database/src/include/common/config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/atomic \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/chrono \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ratio \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/limits \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ctime \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/parse_numbers.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/format.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/format.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cmath \
   /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -215,7 +215,7 @@ src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/core.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/core.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstddef \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stream_iterator.h \
@@ -225,7 +225,7 @@ src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/common/exception.h \
+  /home/aakennes/code/database/Database/src/include/common/exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ios \
@@ -241,9 +241,9 @@ src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ostream.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/istream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/istream.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type_id.h \
-  /home/aakennes/code/database/Database/bustub/src/include/binder/expressions/bound_column_ref.h \
+  /home/aakennes/code/database/Database/src/include/type/type.h \
+  /home/aakennes/code/database/Database/src/include/type/type_id.h \
+  /home/aakennes/code/database/Database/src/include/binder/expressions/bound_column_ref.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algo.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/algorithmfwd.h \
@@ -259,16 +259,16 @@ src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/node_handle.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/erase_if.h \
-  /home/aakennes/code/database/Database/bustub/src/include/binder/bound_expression.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/macros.h \
+  /home/aakennes/code/database/Database/src/include/binder/bound_expression.h \
+  /home/aakennes/code/database/Database/src/include/common/macros.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cassert \
   /usr/include/assert.h \
-  /home/aakennes/code/database/Database/bustub/src/include/binder/table_ref/bound_base_table_ref.h \
+  /home/aakennes/code/database/Database/src/include/binder/table_ref/bound_base_table_ref.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional \
-  /home/aakennes/code/database/Database/bustub/src/include/binder/bound_table_ref.h \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/schema.h \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/column.h \
-  /home/aakennes/code/database/Database/bustub/src/include/concurrency/transaction.h \
+  /home/aakennes/code/database/Database/src/include/binder/bound_table_ref.h \
+  /home/aakennes/code/database/Database/src/include/catalog/schema.h \
+  /home/aakennes/code/database/Database/src/include/catalog/column.h \
+  /home/aakennes/code/database/Database/src/include/concurrency/transaction.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bitset \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/deque \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_deque.h \
@@ -284,14 +284,14 @@ src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/this_thread_sleep.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/unordered_set \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_set.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/logger.h \
-  /home/aakennes/code/database/Database/bustub/src/include/execution/expressions/abstract_expression.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/table/tuple.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/rid.h \
+  /home/aakennes/code/database/Database/src/include/common/logger.h \
+  /home/aakennes/code/database/Database/src/include/execution/expressions/abstract_expression.h \
+  /home/aakennes/code/database/Database/src/include/storage/table/tuple.h \
+  /home/aakennes/code/database/Database/src/include/common/rid.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/sstream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/sstream.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/type/value.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/limits.h \
+  /home/aakennes/code/database/Database/src/include/type/value.h \
+  /home/aakennes/code/database/Database/src/include/type/limits.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cfloat \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/float.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/climits \
@@ -302,7 +302,7 @@ src/binder/statement/CMakeFiles/bustub_statement.dir/index_statement.cpp.o: \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/rwlatch.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/page.h \
+  /home/aakennes/code/database/Database/src/include/common/rwlatch.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/shared_mutex \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/ranges.h
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/ranges.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/tools/wasm-bpt-printer
+# Install script for directory: /home/aakennes/code/database/Database/tools/wasm-bpt-printer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

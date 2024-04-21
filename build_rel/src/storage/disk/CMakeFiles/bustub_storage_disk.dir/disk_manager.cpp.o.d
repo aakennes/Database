@@ -1,5 +1,5 @@
 src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/storage/disk/disk_manager.cpp \
+  /home/aakennes/code/database/Database/src/storage/disk/disk_manager.cpp \
   /usr/include/x86_64-linux-gnu/sys/stat.h /usr/include/features.h \
   /usr/include/features-time64.h \
   /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -209,7 +209,7 @@ src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/refwrap.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_ptr.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/this_thread_sleep.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/exception.h \
+  /home/aakennes/code/database/Database/src/include/common/exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/atomic \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_base.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_lockfree_defines.h \
@@ -228,10 +228,10 @@ src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward/auto_ptr.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_memory_defs.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/execution_defs.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type_id.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/logger.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/disk/disk_manager.h \
+  /home/aakennes/code/database/Database/src/include/type/type.h \
+  /home/aakennes/code/database/Database/src/include/type/type_id.h \
+  /home/aakennes/code/database/Database/src/include/common/logger.h \
+  /home/aakennes/code/database/Database/src/include/storage/disk/disk_manager.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/fstream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/codecvt.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
@@ -241,4 +241,4 @@ src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_manager.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/condition_variable \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_futex.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_function.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/config.h
+  /home/aakennes/code/database/Database/src/include/common/config.h

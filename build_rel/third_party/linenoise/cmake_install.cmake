@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/third_party/linenoise
+# Install script for directory: /home/aakennes/code/database/Database/third_party/linenoise
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

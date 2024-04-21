@@ -1,6 +1,6 @@
 src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/optimizer/optimizer_custom_rules.cpp \
-  /home/aakennes/code/database/Database/bustub/src/include/execution/plans/abstract_plan.h \
+  /home/aakennes/code/database/Database/src/optimizer/optimizer_custom_rules.cpp \
+  /home/aakennes/code/database/Database/src/include/execution/plans/abstract_plan.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/memory \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algobase.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -177,11 +177,11 @@ src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/schema.h \
+  /home/aakennes/code/database/Database/src/include/catalog/schema.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/optional \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/enable_special_members.h \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/column.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/format.h \
+  /home/aakennes/code/database/Database/src/include/catalog/column.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/format.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cmath \
   /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
   /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -211,7 +211,7 @@ src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/system_error \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
-  /home/aakennes/code/database/Database/bustub/third_party/fmt/include/fmt/core.h \
+  /home/aakennes/code/database/Database/third_party/fmt/include/fmt/core.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstddef \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iterator \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stream_iterator.h \
@@ -221,7 +221,7 @@ src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/locale_classes.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/streambuf.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/common/exception.h \
+  /home/aakennes/code/database/Database/src/include/common/exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/atomic \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ostream \
@@ -238,20 +238,20 @@ src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/ostream.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/istream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/istream.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type_id.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/macros.h \
+  /home/aakennes/code/database/Database/src/include/type/type.h \
+  /home/aakennes/code/database/Database/src/include/type/type_id.h \
+  /home/aakennes/code/database/Database/src/include/common/macros.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cassert \
   /usr/include/assert.h \
-  /home/aakennes/code/database/Database/bustub/src/include/optimizer/optimizer.h \
+  /home/aakennes/code/database/Database/src/include/optimizer/optimizer.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/unordered_map \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/hashtable.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/hashtable_policy.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/node_handle.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_map.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/erase_if.h \
-  /home/aakennes/code/database/Database/bustub/src/include/catalog/catalog.h \
-  /home/aakennes/code/database/Database/bustub/src/include/buffer/buffer_pool_manager.h \
+  /home/aakennes/code/database/Database/src/include/catalog/catalog.h \
+  /home/aakennes/code/database/Database/src/include/buffer/buffer_pool_manager.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/list \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_list.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/list.tcc \
@@ -262,13 +262,13 @@ src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/parse_numbers.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_mutex.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_lock.h \
-  /home/aakennes/code/database/Database/bustub/src/include/buffer/lru_k_replacer.h \
+  /home/aakennes/code/database/Database/src/include/buffer/lru_k_replacer.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/set \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_tree.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_set.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_multiset.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/config.h \
-  /home/aakennes/code/database/Database/bustub/src/include/recovery/log_manager.h \
+  /home/aakennes/code/database/Database/src/include/common/config.h \
+  /home/aakennes/code/database/Database/src/include/recovery/log_manager.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/algorithm \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algo.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/algorithmfwd.h \
@@ -281,13 +281,13 @@ src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/future \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_futex.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_thread.h \
-  /home/aakennes/code/database/Database/bustub/src/include/recovery/log_record.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/table/tuple.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/rid.h \
+  /home/aakennes/code/database/Database/src/include/recovery/log_record.h \
+  /home/aakennes/code/database/Database/src/include/storage/table/tuple.h \
+  /home/aakennes/code/database/Database/src/include/common/rid.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/sstream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/sstream.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/type/value.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/limits.h \
+  /home/aakennes/code/database/Database/src/include/type/value.h \
+  /home/aakennes/code/database/Database/src/include/type/limits.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cfloat \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/float.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/climits \
@@ -298,58 +298,58 @@ src/optimizer/CMakeFiles/bustub_optimizer.dir/optimizer_custom_rules.cpp.o: \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/disk/disk_manager.h \
+  /home/aakennes/code/database/Database/src/include/storage/disk/disk_manager.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/fstream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/codecvt.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/fstream.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/disk/disk_scheduler.h \
+  /home/aakennes/code/database/Database/src/include/storage/disk/disk_scheduler.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/thread \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/this_thread_sleep.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/channel.h \
+  /home/aakennes/code/database/Database/src/include/common/channel.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/queue \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/deque \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_deque.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/deque.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_queue.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/disk/write_back_cache.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/rwlatch.h \
+  /home/aakennes/code/database/Database/src/include/storage/disk/write_back_cache.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/page.h \
+  /home/aakennes/code/database/Database/src/include/common/rwlatch.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/shared_mutex \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/page_guard.h \
-  /home/aakennes/code/database/Database/bustub/src/include/container/hash/hash_function.h \
-  /home/aakennes/code/database/Database/bustub/third_party/murmur3/MurmurHash3.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/b_plus_tree_index.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/page_guard.h \
+  /home/aakennes/code/database/Database/src/include/container/hash/hash_function.h \
+  /home/aakennes/code/database/Database/third_party/murmur3/MurmurHash3.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/b_plus_tree_index.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/map \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_map.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_multimap.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/b_plus_tree.h \
-  /home/aakennes/code/database/Database/bustub/src/include/concurrency/transaction.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/b_plus_tree.h \
+  /home/aakennes/code/database/Database/src/include/concurrency/transaction.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bitset \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/unordered_set \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unordered_set.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/logger.h \
-  /home/aakennes/code/database/Database/bustub/src/include/execution/expressions/abstract_expression.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/index_iterator.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/b_plus_tree_leaf_page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/b_plus_tree_page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/generic_key.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/b_plus_tree_header_page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/b_plus_tree_internal_page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/index.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/extendible_hash_table_index.h \
-  /home/aakennes/code/database/Database/bustub/src/include/container/disk/hash/disk_extendible_hash_table.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/extendible_htable_bucket_page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/int_comparator.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/extendible_htable_directory_page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/extendible_htable_header_page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/stl_ordered.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/stl_comparator_wrapper.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/stl_unordered.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/stl_equal_wrapper.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/index/stl_hasher_wrapper.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/table/table_heap.h \
-  /home/aakennes/code/database/Database/bustub/src/include/concurrency/lock_manager.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/page/table_page.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/table/table_iterator.h
+  /home/aakennes/code/database/Database/src/include/common/logger.h \
+  /home/aakennes/code/database/Database/src/include/execution/expressions/abstract_expression.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/index_iterator.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/b_plus_tree_leaf_page.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/b_plus_tree_page.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/generic_key.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/b_plus_tree_header_page.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/b_plus_tree_internal_page.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/index.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/extendible_hash_table_index.h \
+  /home/aakennes/code/database/Database/src/include/container/disk/hash/disk_extendible_hash_table.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/extendible_htable_bucket_page.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/int_comparator.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/extendible_htable_directory_page.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/extendible_htable_header_page.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/stl_ordered.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/stl_comparator_wrapper.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/stl_unordered.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/stl_equal_wrapper.h \
+  /home/aakennes/code/database/Database/src/include/storage/index/stl_hasher_wrapper.h \
+  /home/aakennes/code/database/Database/src/include/storage/table/table_heap.h \
+  /home/aakennes/code/database/Database/src/include/concurrency/lock_manager.h \
+  /home/aakennes/code/database/Database/src/include/storage/page/table_page.h \
+  /home/aakennes/code/database/Database/src/include/storage/table/table_iterator.h

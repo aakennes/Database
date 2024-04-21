@@ -1,5 +1,5 @@
-if(EXISTS "/home/aakennes/code/database/Database/bustub/build_rel/test/page_guard_test[1]_tests.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/test/page_guard_test[1]_tests.cmake")
+if(EXISTS "/home/aakennes/code/database/Database/build_rel/test/page_guard_test[1]_tests.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/test/page_guard_test[1]_tests.cmake")
 else()
   add_test(page_guard_test_NOT_BUILT page_guard_test_NOT_BUILT)
 endif()

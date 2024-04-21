@@ -53,10 +53,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 # Utility rule file for p3.leaderboard-q3_test.
 
@@ -67,7 +67,7 @@ include test/CMakeFiles/p3.leaderboard-q3_test.dir/compiler_depend.make
 include test/CMakeFiles/p3.leaderboard-q3_test.dir/progress.make
 
 test/CMakeFiles/p3.leaderboard-q3_test:
-	cd /home/aakennes/code/database/Database/bustub/build_rel/test && ../bin/bustub-sqllogictest /home/aakennes/code/database/Database/bustub/test/sql/p3.leaderboard-q3.slt --verbose -d --in-memory
+	cd /home/aakennes/code/database/Database/build_rel/test && ../bin/bustub-sqllogictest /home/aakennes/code/database/Database/test/sql/p3.leaderboard-q3.slt --verbose -d --in-memory
 
 p3.leaderboard-q3_test: test/CMakeFiles/p3.leaderboard-q3_test
 p3.leaderboard-q3_test: test/CMakeFiles/p3.leaderboard-q3_test.dir/build.make
@@ -78,10 +78,10 @@ test/CMakeFiles/p3.leaderboard-q3_test.dir/build: p3.leaderboard-q3_test
 .PHONY : test/CMakeFiles/p3.leaderboard-q3_test.dir/build
 
 test/CMakeFiles/p3.leaderboard-q3_test.dir/clean:
-	cd /home/aakennes/code/database/Database/bustub/build_rel/test && $(CMAKE_COMMAND) -P CMakeFiles/p3.leaderboard-q3_test.dir/cmake_clean.cmake
+	cd /home/aakennes/code/database/Database/build_rel/test && $(CMAKE_COMMAND) -P CMakeFiles/p3.leaderboard-q3_test.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/p3.leaderboard-q3_test.dir/clean
 
 test/CMakeFiles/p3.leaderboard-q3_test.dir/depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub/test /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel/test /home/aakennes/code/database/Database/bustub/build_rel/test/CMakeFiles/p3.leaderboard-q3_test.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database /home/aakennes/code/database/Database/test /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel/test /home/aakennes/code/database/Database/build_rel/test/CMakeFiles/p3.leaderboard-q3_test.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/CMakeFiles/p3.leaderboard-q3_test.dir/depend
 

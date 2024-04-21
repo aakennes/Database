@@ -53,10 +53,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 # Utility rule file for submit-p0.
 
@@ -67,7 +67,7 @@ include CMakeFiles/submit-p0.dir/compiler_depend.make
 include CMakeFiles/submit-p0.dir/progress.make
 
 CMakeFiles/submit-p0:
-	cd /home/aakennes/code/database/Database/bustub && zip project0-submission.zip src/planner/plan_func_call.cpp src/include/execution/expressions/string_expression.h src/include/primer/orset.h src/primer/orset.cpp
+	cd /home/aakennes/code/database/Database && zip project0-submission.zip src/planner/plan_func_call.cpp src/include/execution/expressions/string_expression.h src/include/primer/orset.h src/primer/orset.cpp
 
 submit-p0: CMakeFiles/submit-p0
 submit-p0: CMakeFiles/submit-p0.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/submit-p0.dir/clean:
 .PHONY : CMakeFiles/submit-p0.dir/clean
 
 CMakeFiles/submit-p0.dir/depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles/submit-p0.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database /home/aakennes/code/database/Database /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel/CMakeFiles/submit-p0.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/submit-p0.dir/depend
 

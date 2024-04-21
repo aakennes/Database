@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/third_party/libfort
+# Install script for directory: /home/aakennes/code/database/Database/third_party/libfort
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort/lib/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/libfort/lib/cmake_install.cmake")
 
 endif()
 

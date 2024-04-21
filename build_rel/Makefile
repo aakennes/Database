@@ -57,10 +57,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	/home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /home/aakennes/code/database/Database/bustub/build_rel/CPackSourceConfig.cmake
+	/home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /home/aakennes/code/database/Database/build_rel/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,9 +162,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles /home/aakennes/code/database/Database/bustub/build_rel//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/build_rel/CMakeFiles /home/aakennes/code/database/Database/build_rel//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/build_rel/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

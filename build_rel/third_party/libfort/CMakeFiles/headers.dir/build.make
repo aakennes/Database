@@ -56,10 +56,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 # Utility rule file for headers.
 
@@ -77,10 +77,10 @@ third_party/libfort/CMakeFiles/headers.dir/build: headers
 .PHONY : third_party/libfort/CMakeFiles/headers.dir/build
 
 third_party/libfort/CMakeFiles/headers.dir/clean:
-	cd /home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort && $(CMAKE_COMMAND) -P CMakeFiles/headers.dir/cmake_clean.cmake
+	cd /home/aakennes/code/database/Database/build_rel/third_party/libfort && $(CMAKE_COMMAND) -P CMakeFiles/headers.dir/cmake_clean.cmake
 .PHONY : third_party/libfort/CMakeFiles/headers.dir/clean
 
 third_party/libfort/CMakeFiles/headers.dir/depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub/third_party/libfort /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort /home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort/CMakeFiles/headers.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database /home/aakennes/code/database/Database/third_party/libfort /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel/third_party/libfort /home/aakennes/code/database/Database/build_rel/third_party/libfort/CMakeFiles/headers.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : third_party/libfort/CMakeFiles/headers.dir/depend
 

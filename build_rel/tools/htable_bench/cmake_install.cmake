@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/tools/htable_bench
+# Install script for directory: /home/aakennes/code/database/Database/tools/htable_bench
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/third_party/libpg_query
+# Install script for directory: /home/aakennes/code/database/Database/third_party/libpg_query
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

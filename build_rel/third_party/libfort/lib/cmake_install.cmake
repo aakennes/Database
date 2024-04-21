@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/third_party/libfort/lib
+# Install script for directory: /home/aakennes/code/database/Database/third_party/libfort/lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,24 +43,24 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/aakennes/code/database/Database/bustub/build_rel/lib/libfort.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/aakennes/code/database/Database/build_rel/lib/libfort.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE FILE FILES
-    "/home/aakennes/code/database/Database/bustub/third_party/libfort/lib/fort.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/libfort/lib/fort.hpp"
+    "/home/aakennes/code/database/Database/third_party/libfort/lib/fort.h"
+    "/home/aakennes/code/database/Database/third_party/libfort/lib/fort.hpp"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort/lib/libfort.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/aakennes/code/database/Database/build_rel/third_party/libfort/lib/libfort.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort" TYPE FILE FILES
-    "/home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort/lib/libfort-config.cmake"
-    "/home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort/lib/libfort-config-version.cmake"
+    "/home/aakennes/code/database/Database/build_rel/third_party/libfort/lib/libfort-config.cmake"
+    "/home/aakennes/code/database/Database/build_rel/third_party/libfort/lib/libfort-config-version.cmake"
     )
 endif()
 
@@ -68,7 +68,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort/libfort-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort/libfort-targets.cmake"
-         "/home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets.cmake")
+         "/home/aakennes/code/database/Database/build_rel/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort/libfort-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -81,9 +81,9 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort" TYPE FILE FILES "/home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort" TYPE FILE FILES "/home/aakennes/code/database/Database/build_rel/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort" TYPE FILE FILES "/home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/libfort" TYPE FILE FILES "/home/aakennes/code/database/Database/build_rel/third_party/libfort/lib/CMakeFiles/Export/bba6333106b5e1b5982ab34d57f28053/libfort-targets-release.cmake")
   endif()
 endif()
 

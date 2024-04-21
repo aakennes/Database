@@ -53,10 +53,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 # Utility rule file for format.
 
@@ -67,7 +67,7 @@ include CMakeFiles/format.dir/compiler_depend.make
 include CMakeFiles/format.dir/progress.make
 
 CMakeFiles/format:
-	/home/aakennes/code/database/Database/bustub/build_support/run_clang_format.py /usr/bin/clang-format-14 /home/aakennes/code/database/Database/bustub/build_support/clang_format_exclusions.txt --source_dirs /home/aakennes/code/database/Database/bustub/src,/home/aakennes/code/database/Database/bustub/test, --fix --quiet
+	/home/aakennes/code/database/Database/build_support/run_clang_format.py /usr/bin/clang-format-14 /home/aakennes/code/database/Database/build_support/clang_format_exclusions.txt --source_dirs /home/aakennes/code/database/Database/src,/home/aakennes/code/database/Database/test, --fix --quiet
 
 format: CMakeFiles/format
 format: CMakeFiles/format.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/format.dir/clean:
 .PHONY : CMakeFiles/format.dir/clean
 
 CMakeFiles/format.dir/depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles/format.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database /home/aakennes/code/database/Database /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel/CMakeFiles/format.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/format.dir/depend
 

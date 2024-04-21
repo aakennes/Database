@@ -1,6 +1,6 @@
 src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/primer/orset_driver.cpp \
-  /home/aakennes/code/database/Database/bustub/src/include/primer/orset_driver.h \
+  /home/aakennes/code/database/Database/src/primer/orset_driver.cpp \
+  /home/aakennes/code/database/Database/src/include/primer/orset_driver.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/memory \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algobase.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -134,7 +134,7 @@ src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/primer/orset.h \
+  /home/aakennes/code/database/Database/src/include/primer/orset.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/char_traits.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/cstdint \

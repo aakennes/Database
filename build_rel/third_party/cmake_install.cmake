@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/third_party
+# Install script for directory: /home/aakennes/code/database/Database/third_party
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,16 +44,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/murmur3/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/libpg_query/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/googletest/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/fmt/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/linenoise/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/libfort/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/argparse/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/utf8proc/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/backward-cpp/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/readerwriterqueue/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/murmur3/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/libpg_query/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/googletest/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/fmt/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/linenoise/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/libfort/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/argparse/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/utf8proc/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/backward-cpp/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/readerwriterqueue/cmake_install.cmake")
 
 endif()
 

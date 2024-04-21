@@ -1,6 +1,6 @@
 src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/buffer/lru_replacer.cpp \
-  /home/aakennes/code/database/Database/bustub/src/include/buffer/lru_replacer.h \
+  /home/aakennes/code/database/Database/src/buffer/lru_replacer.cpp \
+  /home/aakennes/code/database/Database/src/include/buffer/lru_replacer.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/list \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_algobase.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -175,8 +175,8 @@ src/buffer/CMakeFiles/bustub_buffer.dir/lru_replacer.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_bvector.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/buffer/replacer.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/config.h \
+  /home/aakennes/code/database/Database/src/include/buffer/replacer.h \
+  /home/aakennes/code/database/Database/src/include/common/config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/atomic \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_base.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/atomic_lockfree_defines.h

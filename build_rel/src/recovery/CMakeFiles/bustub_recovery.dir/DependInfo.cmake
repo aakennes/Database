@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/aakennes/code/database/Database/bustub/src/recovery/log_manager.cpp" "src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o" "gcc" "src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o.d"
+  "/home/aakennes/code/database/Database/src/recovery/log_manager.cpp" "src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o" "gcc" "src/recovery/CMakeFiles/bustub_recovery.dir/log_manager.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

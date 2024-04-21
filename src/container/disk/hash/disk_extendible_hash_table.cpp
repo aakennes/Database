@@ -256,7 +256,7 @@ auto DiskExtendibleHashTable<K, V, KC>::Remove(const K &key, Transaction *transa
   if (!remove_success) {
     return false;
   }
-  while (bucket_page->IsEmpty() && directory_page->GetLocalDepth(bucket_idx) > 0) {
+  while (bucket_page->IsEmpty()) {
     auto global_depth = directory_page->GetGlobalDepth();
     if (global_depth == 0) {
       directory_page->SetBucketPageId(bucket_idx, INVALID_PAGE_ID);

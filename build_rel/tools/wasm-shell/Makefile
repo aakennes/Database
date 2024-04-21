@@ -57,10 +57,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/aakennes/code/database/Database/bustub/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
+	cd /home/aakennes/code/database/Database/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/aakennes/code/database/Database/bustub/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /home/aakennes/code/database/Database/bustub/build_rel/CPackSourceConfig.cmake
+	cd /home/aakennes/code/database/Database/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /home/aakennes/code/database/Database/build_rel/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles /home/aakennes/code/database/Database/bustub/build_rel/tools/wasm-shell//CMakeFiles/progress.marks
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/wasm-shell/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles 0
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/build_rel/CMakeFiles /home/aakennes/code/database/Database/build_rel/tools/wasm-shell//CMakeFiles/progress.marks
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/wasm-shell/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/build_rel/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/wasm-shell/clean
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/wasm-shell/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,17 +178,17 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/wasm-shell/preinstall
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/wasm-shell/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/wasm-shell/preinstall
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tools/wasm-shell/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -217,6 +217,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

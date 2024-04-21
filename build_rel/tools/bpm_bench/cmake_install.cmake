@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/tools/bpm_bench
+# Install script for directory: /home/aakennes/code/database/Database/tools/bpm_bench
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

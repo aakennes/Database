@@ -1,6 +1,6 @@
 src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_scheduler.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/src/storage/disk/disk_scheduler.cpp \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/disk/disk_scheduler.h \
+  /home/aakennes/code/database/Database/src/storage/disk/disk_scheduler.cpp \
+  /home/aakennes/code/database/Database/src/include/storage/disk/disk_scheduler.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/future \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/mutex \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/tuple \
@@ -184,7 +184,7 @@ src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_scheduler.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/enable_special_members.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/thread \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/this_thread_sleep.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/channel.h \
+  /home/aakennes/code/database/Database/src/include/common/channel.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/queue \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/deque \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_uninitialized.h \
@@ -196,7 +196,7 @@ src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_scheduler.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/vector.tcc \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_heap.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_queue.h \
-  /home/aakennes/code/database/Database/bustub/src/include/storage/disk/disk_manager.h \
+  /home/aakennes/code/database/Database/src/include/storage/disk/disk_manager.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/fstream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/istream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/ios \
@@ -222,8 +222,8 @@ src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_scheduler.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/fstream.tcc \
-  /home/aakennes/code/database/Database/bustub/src/include/common/config.h \
-  /home/aakennes/code/database/Database/bustub/src/include/common/exception.h \
+  /home/aakennes/code/database/Database/src/include/common/config.h \
+  /home/aakennes/code/database/Database/src/include/common/exception.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/iostream \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/memory \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_tempbuf.h \
@@ -234,5 +234,5 @@ src/storage/disk/CMakeFiles/bustub_storage_disk.dir/disk_scheduler.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/backward/auto_ptr.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/glue_memory_defs.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/pstl/execution_defs.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type.h \
-  /home/aakennes/code/database/Database/bustub/src/include/type/type_id.h
+  /home/aakennes/code/database/Database/src/include/type/type.h \
+  /home/aakennes/code/database/Database/src/include/type/type_id.h

@@ -1,5 +1,5 @@
 third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/pg_functions.cpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/pg_functions.cpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdexcept \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/exception \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -168,9 +168,9 @@ third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.o: \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/error_constants.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/std_mutex.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/unique_lock.h \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/pg_functions.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/pg_functions.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/stdlib.h \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/pg_definitions.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/pg_definitions.hpp \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/limits.h \
   /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
   /usr/include/x86_64-linux-gnu/bits/local_lim.h \
@@ -180,16 +180,16 @@ third_party/libpg_query/CMakeFiles/duckdb_pg_query.dir/pg_functions.cpp.o: \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/lib/llvm-14/lib/clang/14.0.0/include/stdbool.h \
   /usr/include/assert.h \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/nodes/pg_list.hpp \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/nodes/nodes.hpp \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/nodes/parsenodes.hpp \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/nodes/bitmapset.hpp \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/nodes/lockoptions.hpp \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/nodes/primnodes.hpp \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/access/attnum.hpp \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/nodes/value.hpp \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/parser/parser.hpp \
-  /home/aakennes/code/database/Database/bustub/third_party/libpg_query/include/pg_simplified_token.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/nodes/pg_list.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/nodes/nodes.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/nodes/parsenodes.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/nodes/bitmapset.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/nodes/lockoptions.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/nodes/primnodes.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/access/attnum.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/nodes/value.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/parser/parser.hpp \
+  /home/aakennes/code/database/Database/third_party/libpg_query/include/pg_simplified_token.hpp \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/vector \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_uninitialized.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/bits/stl_vector.h \

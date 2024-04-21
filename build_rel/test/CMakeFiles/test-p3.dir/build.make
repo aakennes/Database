@@ -53,10 +53,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 # Utility rule file for test-p3.
 
@@ -67,7 +67,7 @@ include test/CMakeFiles/test-p3.dir/compiler_depend.make
 include test/CMakeFiles/test-p3.dir/progress.make
 
 test/CMakeFiles/test-p3:
-	cd /home/aakennes/code/database/Database/bustub/build_rel/test && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/ctest -R SQLLogicTest
+	cd /home/aakennes/code/database/Database/build_rel/test && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/ctest -R SQLLogicTest
 
 test-p3: test/CMakeFiles/test-p3
 test-p3: test/CMakeFiles/test-p3.dir/build.make
@@ -78,10 +78,10 @@ test/CMakeFiles/test-p3.dir/build: test-p3
 .PHONY : test/CMakeFiles/test-p3.dir/build
 
 test/CMakeFiles/test-p3.dir/clean:
-	cd /home/aakennes/code/database/Database/bustub/build_rel/test && $(CMAKE_COMMAND) -P CMakeFiles/test-p3.dir/cmake_clean.cmake
+	cd /home/aakennes/code/database/Database/build_rel/test && $(CMAKE_COMMAND) -P CMakeFiles/test-p3.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/test-p3.dir/clean
 
 test/CMakeFiles/test-p3.dir/depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub/test /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel/test /home/aakennes/code/database/Database/bustub/build_rel/test/CMakeFiles/test-p3.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database /home/aakennes/code/database/Database/test /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel/test /home/aakennes/code/database/Database/build_rel/test/CMakeFiles/test-p3.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : test/CMakeFiles/test-p3.dir/depend
 

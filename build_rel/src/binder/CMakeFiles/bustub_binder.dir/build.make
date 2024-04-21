@@ -53,10 +53,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 # Include any dependencies generated for this target.
 include src/binder/CMakeFiles/bustub_binder.dir/depend.make
@@ -70,144 +70,144 @@ include src/binder/CMakeFiles/bustub_binder.dir/progress.make
 include src/binder/CMakeFiles/bustub_binder.dir/flags.make
 
 src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/flags.make
-src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o: /home/aakennes/code/database/Database/bustub/src/binder/binder.cpp
+src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o: /home/aakennes/code/database/Database/src/binder/binder.cpp
 src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o -MF CMakeFiles/bustub_binder.dir/binder.cpp.o.d -o CMakeFiles/bustub_binder.dir/binder.cpp.o -c /home/aakennes/code/database/Database/bustub/src/binder/binder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o -MF CMakeFiles/bustub_binder.dir/binder.cpp.o.d -o CMakeFiles/bustub_binder.dir/binder.cpp.o -c /home/aakennes/code/database/Database/src/binder/binder.cpp
 
 src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_binder.dir/binder.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/binder/binder.cpp > CMakeFiles/bustub_binder.dir/binder.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/binder/binder.cpp > CMakeFiles/bustub_binder.dir/binder.cpp.i
 
 src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_binder.dir/binder.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/binder/binder.cpp -o CMakeFiles/bustub_binder.dir/binder.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/binder/binder.cpp -o CMakeFiles/bustub_binder.dir/binder.cpp.s
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/flags.make
-src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o: /home/aakennes/code/database/Database/bustub/src/binder/bind_create.cpp
+src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o: /home/aakennes/code/database/Database/src/binder/bind_create.cpp
 src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o -MF CMakeFiles/bustub_binder.dir/bind_create.cpp.o.d -o CMakeFiles/bustub_binder.dir/bind_create.cpp.o -c /home/aakennes/code/database/Database/bustub/src/binder/bind_create.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o -MF CMakeFiles/bustub_binder.dir/bind_create.cpp.o.d -o CMakeFiles/bustub_binder.dir/bind_create.cpp.o -c /home/aakennes/code/database/Database/src/binder/bind_create.cpp
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_binder.dir/bind_create.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/binder/bind_create.cpp > CMakeFiles/bustub_binder.dir/bind_create.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/binder/bind_create.cpp > CMakeFiles/bustub_binder.dir/bind_create.cpp.i
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_binder.dir/bind_create.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/binder/bind_create.cpp -o CMakeFiles/bustub_binder.dir/bind_create.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/binder/bind_create.cpp -o CMakeFiles/bustub_binder.dir/bind_create.cpp.s
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/flags.make
-src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o: /home/aakennes/code/database/Database/bustub/src/binder/bind_insert.cpp
+src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o: /home/aakennes/code/database/Database/src/binder/bind_insert.cpp
 src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o -MF CMakeFiles/bustub_binder.dir/bind_insert.cpp.o.d -o CMakeFiles/bustub_binder.dir/bind_insert.cpp.o -c /home/aakennes/code/database/Database/bustub/src/binder/bind_insert.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.o -MF CMakeFiles/bustub_binder.dir/bind_insert.cpp.o.d -o CMakeFiles/bustub_binder.dir/bind_insert.cpp.o -c /home/aakennes/code/database/Database/src/binder/bind_insert.cpp
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_binder.dir/bind_insert.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/binder/bind_insert.cpp > CMakeFiles/bustub_binder.dir/bind_insert.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/binder/bind_insert.cpp > CMakeFiles/bustub_binder.dir/bind_insert.cpp.i
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_insert.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_binder.dir/bind_insert.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/binder/bind_insert.cpp -o CMakeFiles/bustub_binder.dir/bind_insert.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/binder/bind_insert.cpp -o CMakeFiles/bustub_binder.dir/bind_insert.cpp.s
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/flags.make
-src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o: /home/aakennes/code/database/Database/bustub/src/binder/bind_select.cpp
+src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o: /home/aakennes/code/database/Database/src/binder/bind_select.cpp
 src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o -MF CMakeFiles/bustub_binder.dir/bind_select.cpp.o.d -o CMakeFiles/bustub_binder.dir/bind_select.cpp.o -c /home/aakennes/code/database/Database/bustub/src/binder/bind_select.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.o -MF CMakeFiles/bustub_binder.dir/bind_select.cpp.o.d -o CMakeFiles/bustub_binder.dir/bind_select.cpp.o -c /home/aakennes/code/database/Database/src/binder/bind_select.cpp
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_binder.dir/bind_select.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/binder/bind_select.cpp > CMakeFiles/bustub_binder.dir/bind_select.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/binder/bind_select.cpp > CMakeFiles/bustub_binder.dir/bind_select.cpp.i
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_select.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_binder.dir/bind_select.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/binder/bind_select.cpp -o CMakeFiles/bustub_binder.dir/bind_select.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/binder/bind_select.cpp -o CMakeFiles/bustub_binder.dir/bind_select.cpp.s
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/flags.make
-src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o: /home/aakennes/code/database/Database/bustub/src/binder/bind_variable.cpp
+src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o: /home/aakennes/code/database/Database/src/binder/bind_variable.cpp
 src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o -MF CMakeFiles/bustub_binder.dir/bind_variable.cpp.o.d -o CMakeFiles/bustub_binder.dir/bind_variable.cpp.o -c /home/aakennes/code/database/Database/bustub/src/binder/bind_variable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.o -MF CMakeFiles/bustub_binder.dir/bind_variable.cpp.o.d -o CMakeFiles/bustub_binder.dir/bind_variable.cpp.o -c /home/aakennes/code/database/Database/src/binder/bind_variable.cpp
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_binder.dir/bind_variable.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/binder/bind_variable.cpp > CMakeFiles/bustub_binder.dir/bind_variable.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/binder/bind_variable.cpp > CMakeFiles/bustub_binder.dir/bind_variable.cpp.i
 
 src/binder/CMakeFiles/bustub_binder.dir/bind_variable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_binder.dir/bind_variable.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/binder/bind_variable.cpp -o CMakeFiles/bustub_binder.dir/bind_variable.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/binder/bind_variable.cpp -o CMakeFiles/bustub_binder.dir/bind_variable.cpp.s
 
 src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/flags.make
-src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o: /home/aakennes/code/database/Database/bustub/src/binder/bound_statement.cpp
+src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o: /home/aakennes/code/database/Database/src/binder/bound_statement.cpp
 src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o -MF CMakeFiles/bustub_binder.dir/bound_statement.cpp.o.d -o CMakeFiles/bustub_binder.dir/bound_statement.cpp.o -c /home/aakennes/code/database/Database/bustub/src/binder/bound_statement.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.o -MF CMakeFiles/bustub_binder.dir/bound_statement.cpp.o.d -o CMakeFiles/bustub_binder.dir/bound_statement.cpp.o -c /home/aakennes/code/database/Database/src/binder/bound_statement.cpp
 
 src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_binder.dir/bound_statement.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/binder/bound_statement.cpp > CMakeFiles/bustub_binder.dir/bound_statement.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/binder/bound_statement.cpp > CMakeFiles/bustub_binder.dir/bound_statement.cpp.i
 
 src/binder/CMakeFiles/bustub_binder.dir/bound_statement.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_binder.dir/bound_statement.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/binder/bound_statement.cpp -o CMakeFiles/bustub_binder.dir/bound_statement.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/binder/bound_statement.cpp -o CMakeFiles/bustub_binder.dir/bound_statement.cpp.s
 
 src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/flags.make
-src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o: /home/aakennes/code/database/Database/bustub/src/binder/fmt_impl.cpp
+src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o: /home/aakennes/code/database/Database/src/binder/fmt_impl.cpp
 src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o -MF CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o.d -o CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o -c /home/aakennes/code/database/Database/bustub/src/binder/fmt_impl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o -MF CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o.d -o CMakeFiles/bustub_binder.dir/fmt_impl.cpp.o -c /home/aakennes/code/database/Database/src/binder/fmt_impl.cpp
 
 src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_binder.dir/fmt_impl.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/binder/fmt_impl.cpp > CMakeFiles/bustub_binder.dir/fmt_impl.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/binder/fmt_impl.cpp > CMakeFiles/bustub_binder.dir/fmt_impl.cpp.i
 
 src/binder/CMakeFiles/bustub_binder.dir/fmt_impl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_binder.dir/fmt_impl.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/binder/fmt_impl.cpp -o CMakeFiles/bustub_binder.dir/fmt_impl.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/binder/fmt_impl.cpp -o CMakeFiles/bustub_binder.dir/fmt_impl.cpp.s
 
 src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/flags.make
-src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o: /home/aakennes/code/database/Database/bustub/src/binder/keyword_helper.cpp
+src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o: /home/aakennes/code/database/Database/src/binder/keyword_helper.cpp
 src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o -MF CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o.d -o CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o -c /home/aakennes/code/database/Database/bustub/src/binder/keyword_helper.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o -MF CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o.d -o CMakeFiles/bustub_binder.dir/keyword_helper.cpp.o -c /home/aakennes/code/database/Database/src/binder/keyword_helper.cpp
 
 src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_binder.dir/keyword_helper.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/binder/keyword_helper.cpp > CMakeFiles/bustub_binder.dir/keyword_helper.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/binder/keyword_helper.cpp > CMakeFiles/bustub_binder.dir/keyword_helper.cpp.i
 
 src/binder/CMakeFiles/bustub_binder.dir/keyword_helper.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_binder.dir/keyword_helper.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/binder/keyword_helper.cpp -o CMakeFiles/bustub_binder.dir/keyword_helper.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/binder/keyword_helper.cpp -o CMakeFiles/bustub_binder.dir/keyword_helper.cpp.s
 
 src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/flags.make
-src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o: /home/aakennes/code/database/Database/bustub/src/binder/node_tag_to_string.cpp
+src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o: /home/aakennes/code/database/Database/src/binder/node_tag_to_string.cpp
 src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o -MF CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o.d -o CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o -c /home/aakennes/code/database/Database/bustub/src/binder/node_tag_to_string.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o -MF CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o.d -o CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.o -c /home/aakennes/code/database/Database/src/binder/node_tag_to_string.cpp
 
 src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/binder/node_tag_to_string.cpp > CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/binder/node_tag_to_string.cpp > CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.i
 
 src/binder/CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/binder/node_tag_to_string.cpp -o CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/binder/node_tag_to_string.cpp -o CMakeFiles/bustub_binder.dir/node_tag_to_string.cpp.s
 
 src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/flags.make
-src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o: /home/aakennes/code/database/Database/bustub/src/binder/transformer.cpp
+src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o: /home/aakennes/code/database/Database/src/binder/transformer.cpp
 src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o: src/binder/CMakeFiles/bustub_binder.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o -MF CMakeFiles/bustub_binder.dir/transformer.cpp.o.d -o CMakeFiles/bustub_binder.dir/transformer.cpp.o -c /home/aakennes/code/database/Database/bustub/src/binder/transformer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/aakennes/code/database/Database/build_rel/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o"
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.o -MF CMakeFiles/bustub_binder.dir/transformer.cpp.o.d -o CMakeFiles/bustub_binder.dir/transformer.cpp.o -c /home/aakennes/code/database/Database/src/binder/transformer.cpp
 
 src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/bustub_binder.dir/transformer.cpp.i"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/bustub/src/binder/transformer.cpp > CMakeFiles/bustub_binder.dir/transformer.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/aakennes/code/database/Database/src/binder/transformer.cpp > CMakeFiles/bustub_binder.dir/transformer.cpp.i
 
 src/binder/CMakeFiles/bustub_binder.dir/transformer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/bustub_binder.dir/transformer.cpp.s"
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/bustub/src/binder/transformer.cpp -o CMakeFiles/bustub_binder.dir/transformer.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/aakennes/code/database/Database/src/binder/transformer.cpp -o CMakeFiles/bustub_binder.dir/transformer.cpp.s
 
 bustub_binder: src/binder/CMakeFiles/bustub_binder.dir/binder.cpp.o
 bustub_binder: src/binder/CMakeFiles/bustub_binder.dir/bind_create.cpp.o
@@ -227,10 +227,10 @@ src/binder/CMakeFiles/bustub_binder.dir/build: bustub_binder
 .PHONY : src/binder/CMakeFiles/bustub_binder.dir/build
 
 src/binder/CMakeFiles/bustub_binder.dir/clean:
-	cd /home/aakennes/code/database/Database/bustub/build_rel/src/binder && $(CMAKE_COMMAND) -P CMakeFiles/bustub_binder.dir/cmake_clean.cmake
+	cd /home/aakennes/code/database/Database/build_rel/src/binder && $(CMAKE_COMMAND) -P CMakeFiles/bustub_binder.dir/cmake_clean.cmake
 .PHONY : src/binder/CMakeFiles/bustub_binder.dir/clean
 
 src/binder/CMakeFiles/bustub_binder.dir/depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub/src/binder /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel/src/binder /home/aakennes/code/database/Database/bustub/build_rel/src/binder/CMakeFiles/bustub_binder.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database /home/aakennes/code/database/Database/src/binder /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel/src/binder /home/aakennes/code/database/Database/build_rel/src/binder/CMakeFiles/bustub_binder.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : src/binder/CMakeFiles/bustub_binder.dir/depend
 

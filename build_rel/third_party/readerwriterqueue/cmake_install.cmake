@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/third_party/readerwriterqueue
+# Install script for directory: /home/aakennes/code/database/Database/third_party/readerwriterqueue
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,10 +44,10 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/readerwriterqueue" TYPE FILE FILES
-    "/home/aakennes/code/database/Database/bustub/third_party/readerwriterqueue/atomicops.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/readerwriterqueue/readerwriterqueue.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/readerwriterqueue/readerwritercircularbuffer.h"
-    "/home/aakennes/code/database/Database/bustub/third_party/readerwriterqueue/LICENSE.md"
+    "/home/aakennes/code/database/Database/third_party/readerwriterqueue/atomicops.h"
+    "/home/aakennes/code/database/Database/third_party/readerwriterqueue/readerwriterqueue.h"
+    "/home/aakennes/code/database/Database/third_party/readerwriterqueue/readerwritercircularbuffer.h"
+    "/home/aakennes/code/database/Database/third_party/readerwriterqueue/LICENSE.md"
     )
 endif()
 

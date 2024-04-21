@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub/tools/nc-shell
+# Install script for directory: /home/aakennes/code/database/Database/tools/nc-shell
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

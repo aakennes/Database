@@ -57,10 +57,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
 # Special rule for the target package
 package: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool..."
-	cd /home/aakennes/code/database/Database/bustub/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
+	cd /home/aakennes/code/database/Database/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackConfig.cmake
 .PHONY : package
 
 # Special rule for the target package
@@ -78,7 +78,7 @@ package/fast: package
 # Special rule for the target package_source
 package_source:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Run CPack packaging tool for source..."
-	cd /home/aakennes/code/database/Database/bustub/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /home/aakennes/code/database/Database/bustub/build_rel/CPackSourceConfig.cmake
+	cd /home/aakennes/code/database/Database/build_rel && /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cpack --config ./CPackSourceConfig.cmake /home/aakennes/code/database/Database/build_rel/CPackSourceConfig.cmake
 .PHONY : package_source
 
 # Special rule for the target package_source
@@ -162,14 +162,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles /home/aakennes/code/database/Database/bustub/build_rel/src/primer//CMakeFiles/progress.marks
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/primer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles 0
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/build_rel/CMakeFiles /home/aakennes/code/database/Database/build_rel/src/primer//CMakeFiles/progress.marks
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/primer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/aakennes/code/database/Database/build_rel/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/primer/clean
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/primer/clean
 .PHONY : clean
 
 # The main clean target
@@ -178,22 +178,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/primer/preinstall
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/primer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/primer/preinstall
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/primer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/primer/CMakeFiles/bustub_primer.dir/rule:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/primer/CMakeFiles/bustub_primer.dir/rule
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/primer/CMakeFiles/bustub_primer.dir/rule
 .PHONY : src/primer/CMakeFiles/bustub_primer.dir/rule
 
 # Convenience name for target.
@@ -202,7 +202,7 @@ bustub_primer: src/primer/CMakeFiles/bustub_primer.dir/rule
 
 # fast build rule for target.
 bustub_primer/fast:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/build
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/build
 .PHONY : bustub_primer/fast
 
 orset.o: orset.cpp.o
@@ -210,7 +210,7 @@ orset.o: orset.cpp.o
 
 # target to build an object file
 orset.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.o
 .PHONY : orset.cpp.o
 
 orset.i: orset.cpp.i
@@ -218,7 +218,7 @@ orset.i: orset.cpp.i
 
 # target to preprocess a source file
 orset.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.i
 .PHONY : orset.cpp.i
 
 orset.s: orset.cpp.s
@@ -226,7 +226,7 @@ orset.s: orset.cpp.s
 
 # target to generate assembly for a file
 orset.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset.cpp.s
 .PHONY : orset.cpp.s
 
 orset_driver.o: orset_driver.cpp.o
@@ -234,7 +234,7 @@ orset_driver.o: orset_driver.cpp.o
 
 # target to build an object file
 orset_driver.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.o
 .PHONY : orset_driver.cpp.o
 
 orset_driver.i: orset_driver.cpp.i
@@ -242,7 +242,7 @@ orset_driver.i: orset_driver.cpp.i
 
 # target to preprocess a source file
 orset_driver.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.i
 .PHONY : orset_driver.cpp.i
 
 orset_driver.s: orset_driver.cpp.s
@@ -250,7 +250,7 @@ orset_driver.s: orset_driver.cpp.s
 
 # target to generate assembly for a file
 orset_driver.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/orset_driver.cpp.s
 .PHONY : orset_driver.cpp.s
 
 trie.o: trie.cpp.o
@@ -258,7 +258,7 @@ trie.o: trie.cpp.o
 
 # target to build an object file
 trie.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.o
 .PHONY : trie.cpp.o
 
 trie.i: trie.cpp.i
@@ -266,7 +266,7 @@ trie.i: trie.cpp.i
 
 # target to preprocess a source file
 trie.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.i
 .PHONY : trie.cpp.i
 
 trie.s: trie.cpp.s
@@ -274,7 +274,7 @@ trie.s: trie.cpp.s
 
 # target to generate assembly for a file
 trie.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie.cpp.s
 .PHONY : trie.cpp.s
 
 trie_store.o: trie_store.cpp.o
@@ -282,7 +282,7 @@ trie_store.o: trie_store.cpp.o
 
 # target to build an object file
 trie_store.cpp.o:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.o
 .PHONY : trie_store.cpp.o
 
 trie_store.i: trie_store.cpp.i
@@ -290,7 +290,7 @@ trie_store.i: trie_store.cpp.i
 
 # target to preprocess a source file
 trie_store.cpp.i:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.i
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.i
 .PHONY : trie_store.cpp.i
 
 trie_store.s: trie_store.cpp.s
@@ -298,7 +298,7 @@ trie_store.s: trie_store.cpp.s
 
 # target to generate assembly for a file
 trie_store.cpp.s:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.s
+	cd /home/aakennes/code/database/Database/build_rel && $(MAKE) $(MAKESILENT) -f src/primer/CMakeFiles/bustub_primer.dir/build.make src/primer/CMakeFiles/bustub_primer.dir/trie_store.cpp.s
 .PHONY : trie_store.cpp.s
 
 # Help Target
@@ -340,6 +340,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

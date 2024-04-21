@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/bustub_optimizer.dir/column_pruning.cpp.o"
+  "CMakeFiles/bustub_optimizer.dir/column_pruning.cpp.o.d"
   "CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o"
   "CMakeFiles/bustub_optimizer.dir/eliminate_true_filter.cpp.o.d"
   "CMakeFiles/bustub_optimizer.dir/merge_filter_nlj.cpp.o"

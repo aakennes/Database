@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -DBACKWARD_HAS_BACKTRACE=0 -DBACKWARD_HAS_BACKTRACE_SYMBOL=0 -DBACKWARD_HAS_BFD=0 -DBACKWARD_HAS_DW=0 -DBACKWARD_HAS_DWARF=1 -DBACKWARD_HAS_LIBUNWIND=0 -DBACKWARD_HAS_UNWIND=1
 
-CXX_INCLUDES = -I/home/aakennes/code/database/Database/bustub/src -I/home/aakennes/code/database/Database/bustub/src/include -I/home/aakennes/code/database/Database/bustub/test/include -I/home/aakennes/code/database/Database/bustub/third_party -I/home/aakennes/code/database/Database/bustub/third_party/fmt/include -I/home/aakennes/code/database/Database/bustub/third_party/libpg_query/include -I/home/aakennes/code/database/Database/bustub/third_party/argparse/include -I/home/aakennes/code/database/Database/bustub/third_party/cpp_random_distributions -I/home/aakennes/code/database/Database/bustub/third_party/backward-cpp/include -I/usr/include/libdwarf -I/home/aakennes/code/database/Database/bustub/third_party/backward-cpp
+CXX_INCLUDES = -I/home/aakennes/code/database/Database/src -I/home/aakennes/code/database/Database/src/include -I/home/aakennes/code/database/Database/test/include -I/home/aakennes/code/database/Database/third_party -I/home/aakennes/code/database/Database/third_party/fmt/include -I/home/aakennes/code/database/Database/third_party/libpg_query/include -I/home/aakennes/code/database/Database/third_party/argparse/include -I/home/aakennes/code/database/Database/third_party/cpp_random_distributions -I/home/aakennes/code/database/Database/third_party/backward-cpp/include -I/usr/include/libdwarf -I/home/aakennes/code/database/Database/third_party/backward-cpp
 
 CXX_FLAGS =  -Wall -Wextra -pedantic-errors -g -O3 -DNDEBUG -std=gnu++11 -fPIC
 

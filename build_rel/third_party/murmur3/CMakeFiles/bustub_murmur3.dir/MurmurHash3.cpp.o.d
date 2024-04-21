@@ -1,6 +1,6 @@
 third_party/murmur3/CMakeFiles/bustub_murmur3.dir/MurmurHash3.cpp.o: \
-  /home/aakennes/code/database/Database/bustub/third_party/murmur3/MurmurHash3.cpp \
-  /home/aakennes/code/database/Database/bustub/third_party/murmur3/MurmurHash3.h \
+  /home/aakennes/code/database/Database/third_party/murmur3/MurmurHash3.cpp \
+  /home/aakennes/code/database/Database/third_party/murmur3/MurmurHash3.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/c++/11/string \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/11/../../../../include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

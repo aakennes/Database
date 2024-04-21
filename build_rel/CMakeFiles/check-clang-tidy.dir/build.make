@@ -53,10 +53,10 @@ RM = /home/aakennes/.local/lib/python3.10/site-packages/cmake/data/bin/cmake -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database/bustub
+CMAKE_SOURCE_DIR = /home/aakennes/code/database/Database
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/bustub/build_rel
+CMAKE_BINARY_DIR = /home/aakennes/code/database/Database/build_rel
 
 # Utility rule file for check-clang-tidy.
 
@@ -67,7 +67,7 @@ include CMakeFiles/check-clang-tidy.dir/compiler_depend.make
 include CMakeFiles/check-clang-tidy.dir/progress.make
 
 CMakeFiles/check-clang-tidy:
-	/home/aakennes/code/database/Database/bustub/build_support/run_clang_tidy.py -clang-tidy-binary /usr/bin/clang-tidy-14 -p /home/aakennes/code/database/Database/bustub/build_rel
+	/home/aakennes/code/database/Database/build_support/run_clang_tidy.py -clang-tidy-binary /usr/bin/clang-tidy-14 -p /home/aakennes/code/database/Database/build_rel
 
 check-clang-tidy: CMakeFiles/check-clang-tidy
 check-clang-tidy: CMakeFiles/check-clang-tidy.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/check-clang-tidy.dir/clean:
 .PHONY : CMakeFiles/check-clang-tidy.dir/clean
 
 CMakeFiles/check-clang-tidy.dir/depend:
-	cd /home/aakennes/code/database/Database/bustub/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel /home/aakennes/code/database/Database/bustub/build_rel/CMakeFiles/check-clang-tidy.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/aakennes/code/database/Database/build_rel && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/aakennes/code/database/Database /home/aakennes/code/database/Database /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel /home/aakennes/code/database/Database/build_rel/CMakeFiles/check-clang-tidy.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/check-clang-tidy.dir/depend
 

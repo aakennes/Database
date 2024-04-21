@@ -1,4 +1,4 @@
-# Install script for directory: /home/aakennes/code/database/Database/bustub
+# Install script for directory: /home/aakennes/code/database/Database
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,10 +44,10 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/aakennes/code/database/Database/bustub/build_rel/third_party/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/src/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/test/cmake_install.cmake")
-  include("/home/aakennes/code/database/Database/bustub/build_rel/tools/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/third_party/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/src/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/test/cmake_install.cmake")
+  include("/home/aakennes/code/database/Database/build_rel/tools/cmake_install.cmake")
 
 endif()
 
@@ -59,5 +59,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/aakennes/code/database/Database/bustub/build_rel/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/aakennes/code/database/Database/build_rel/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
