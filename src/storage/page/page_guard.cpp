@@ -66,9 +66,12 @@ ReadPageGuard::ReadPageGuard(ReadPageGuard &&that) noexcept
 
 auto ReadPageGuard::operator=(ReadPageGuard &&that) noexcept -> ReadPageGuard & {
   if (this != &that) {
-    Drop();
     if (guard_.page_ != nullptr) {
       guard_.page_->RUnlatch();
+    }
+    Drop();
+    if (guard_.page_ != nullptr) {
+      guard_.page_->RLatch();
     }
     guard_ = std::move(that.guard_);
   }
@@ -94,9 +97,12 @@ WritePageGuard::WritePageGuard(WritePageGuard &&that) noexcept : guard_(std::mov
 
 auto WritePageGuard::operator=(WritePageGuard &&that) noexcept -> WritePageGuard & {
   if (this != &that) {
-    Drop();
     if (guard_.page_ != nullptr) {
       guard_.page_->WUnlatch();
+    }
+    Drop();
+    if (guard_.page_ != nullptr) {
+      guard_.page_->WLatch();
     }
     guard_ = std::move(that.guard_);
   }
@@ -110,6 +116,9 @@ void WritePageGuard::Drop() {
   }
 }
 
-WritePageGuard::~WritePageGuard() { Drop(); }  // NOLINT
+WritePageGuard::~WritePageGuard() { 
+  // guard_.page_->WUnlatch();
+  Drop(); 
+}  // NOLINT
 
 }  // namespace bustub

@@ -192,13 +192,13 @@ auto BufferPoolManager::FetchPageBasic(page_id_t page_id) -> BasicPageGuard {
 auto BufferPoolManager::FetchPageRead(page_id_t page_id) -> ReadPageGuard {
   // std::cout<<"Before Return"<<'\n';
   Page *page_tofetch = FetchPage(page_id);
-  page_tofetch->RLatch();
+  // page_tofetch->RLatch();
   return {this, page_tofetch};
 }
 
 auto BufferPoolManager::FetchPageWrite(page_id_t page_id) -> WritePageGuard {
   Page *page_tofetch = FetchPage(page_id);
-  page_tofetch->WLatch();
+  // page_tofetch->WLatch();
   return {this, page_tofetch};
 }
 
