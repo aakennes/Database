@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{+w}{ }git\PYG{+w}{ }remote\PYG{+w}{ }add\PYG{+w}{ }public\PYG{+w}{ }https://github.com/cmu\PYGZhy{}db/bustub.git
+\PYG{+w}{ }git\PYG{+w}{ }pull\PYG{+w}{ }public\PYG{+w}{ }master\PYG{+w}{ }\PYGZhy{}\PYGZhy{}allow\PYGZhy{}unrelated\PYGZhy{}histories
+\end{Verbatim}

@@ -1,0 +1,23 @@
+\babel@toc {UKenglish}{}\relax 
+\contentsline {section}{\numberline {1}简介}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}环境介绍}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}任务完成情况}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Protect2介绍}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}外部结构}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}内部结构}{4}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}header}{5}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}directory}{5}{subsubsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.3}bucket}{6}{subsubsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.3}directory的分裂}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}directory的合并}{7}{subsection.2.4}%
+\contentsline {section}{\numberline {3}Task1:Extendible Hash Table Pages}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}header}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}directory}{8}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}bucket}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Debug}{10}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Task2:Extendible Hashing Implementation}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Insert}{11}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Remove}{12}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Debug}{13}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Task3:Concurrency Control}{13}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Debug}{13}{subsection.5.1}%

@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8\relax}]
+\PYG{+w}{ }cmake\PYG{+w}{ }\PYGZhy{}DCMAKE\PYGZus{}BUILD\PYGZus{}TYPE\PYG{o}{=}Debug\PYG{+w}{ }..
+\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} 本地运行时使用Debug模式，上传时使用Release模式，检查内存时添加\PYGZhy{}DBUSTUB\PYGZus{}SANITIZER=}
+\PYG{+w}{ }make\PYG{+w}{ }extendible\PYGZus{}htable\PYGZus{}page\PYGZus{}test\PYG{+w}{ }\PYGZhy{}j\PYG{k}{\PYGZdl{}(}nproc\PYG{k}{)}
+\PYG{+w}{ }./test/extendible\PYGZus{}htable\PYGZus{}page\PYGZus{}test
+\PYG{+w}{ }\PYG{c+c1}{\PYGZsh{} extendible\PYGZus{}htable\PYGZus{}page\PYGZus{}test换成对应任务的测试名}
+\end{Verbatim}

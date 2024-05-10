@@ -30,6 +30,7 @@ namespace bustub {
 // 3. return a `StringExpression` std::shared_ptr.
 auto Planner::GetFuncCallFromFactory(const std::string &func_name, std::vector<AbstractExpressionRef> args)
     -> AbstractExpressionRef {
+      // printf("asdads");
   if (args.size() != 1 || (func_name != "lower" && func_name != "upper") ||
       args[0]->GetReturnType().GetType() != TypeId::VARCHAR) {
     throw Exception(fmt::format("func call {} not supported in planner yet", func_name));
