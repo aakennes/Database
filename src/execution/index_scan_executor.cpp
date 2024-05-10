@@ -54,13 +54,6 @@ auto IndexScanExecutor::Next(Tuple *tuple, RID *rid) -> bool {
         vec_now_++;
         if(tuple_meta.is_deleted_){continue;}
         auto &filter_expr = plan_->filter_predicate_;
-        // for(auto &index_expr:plan_->pred_keys_){
-        //     std::cout<<filter_expr->ToString()<<" "<<index_expr->ToString()<<" HEREasdas\n";
-        //     auto value=index_expr->Evaluate(tuple, plan_->OutputSchema());
-        //     if (!value.IsNull() && value.GetAs<bool>()) {
-        //         return true;
-        //     }
-        // }
         auto value=filter_expr->Evaluate(tuple, plan_->OutputSchema());
         if (!value.IsNull() && value.GetAs<bool>()) {
             return true;

@@ -50,9 +50,9 @@ auto Optimizer::OptimizeSeqScanAsIndexScan(const bustub::AbstractPlanNodeRef &pl
       
       index_oid_t left_index_oid=INVALID_TXN_ID;
       // auto left_plan=;
-      puts("_________________");
+      // puts("_________________");
       const auto &left_expr = expr->GetChildAt(0);
-      puts("_________________");
+      // puts("_________________");
       auto left_val=getvalue(left_index_oid,left_expr);
       if(left_val.empty()){
         return {};

@@ -18,11 +18,54 @@ namespace bustub {
 
 AggregationExecutor::AggregationExecutor(ExecutorContext *exec_ctx, const AggregationPlanNode *plan,
                                          std::unique_ptr<AbstractExecutor> &&child_executor)
-    : AbstractExecutor(exec_ctx) {}
+    : AbstractExecutor(exec_ctx),
+    plan_(plan),
+    child_executor_(std::move(child_executor)),
+    aht_(plan_->aggregates_,plan_->agg_types_),
+    aht_iterator_({}) {}
 
-void AggregationExecutor::Init() {}
+void AggregationExecutor::Init() {
+    child_executor_->Init();
+    Tuple child_tuple;
+    RID child_rid;
+    while(true){
+        auto status = child_executor_->Next(&child_tuple, &child_rid);
+		if (!status) {
+			break;
+		}
+        aht_.InsertCombine(MakeAggregateKey(&child_tuple), MakeAggregateValue(&child_tuple));
+    }
+    if(aht_.Begin()==aht_.End()){
+        // std::cout<<"HERER\n";
+        aht_.GenerateNull();
+        // std::cerr<<"HASDASD:"<<(aht_.End()==aht_.Begin())<<'\n';
+        // aht_.InsertCombine({}, aht_.GenerateInitialAggregateValue());
+    }
+    aht_iterator_=aht_.Begin();
+}
 
-auto AggregationExecutor::Next(Tuple *tuple, RID *rid) -> bool { return false; }
+auto AggregationExecutor::Next(Tuple *tuple, RID *rid) -> bool { 
+    // auto aggregate=plan_->;
+    while(true){
+        if(aht_iterator_==aht_.End()){
+            return false;
+        }
+        auto aggregate_key = aht_iterator_.Key();
+        auto aggregate_val = aht_iterator_.Val();
+        std::vector<Value> aggregate_values{};
+        aggregate_values.reserve(aggregate_key.group_bys_.size()+aggregate_val.aggregates_.size());
+        aggregate_values.insert(aggregate_values.end(),aggregate_key.group_bys_.begin(),aggregate_key.group_bys_.end());
+        aggregate_values.insert(aggregate_values.end(),aggregate_val.aggregates_.begin(),aggregate_val.aggregates_.end());
+        // aggregate_values.emplace_back(aggregate_val.aggregates_);
+		*tuple=Tuple(aggregate_values,&plan_->OutputSchema());
+        *rid = tuple->GetRid();
+        // // std::cout<<tuple->ToString(&GetOutputSchema())<<'\n';
+        ++aht_iterator_;
+        return true;
+    }
+    // std::cout<<"HERE\n";
+    return false; 
+}
 
 auto AggregationExecutor::GetChildExecutor() const -> const AbstractExecutor * { return child_executor_.get(); }
 
