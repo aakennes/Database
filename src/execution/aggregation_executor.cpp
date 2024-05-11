@@ -35,7 +35,7 @@ void AggregationExecutor::Init() {
 		}
         aht_.InsertCombine(MakeAggregateKey(&child_tuple), MakeAggregateValue(&child_tuple));
     }
-    if(aht_.Begin()==aht_.End()){
+    if(plan_->GetGroupBys().empty()){
         // std::cout<<"HERER\n";
         aht_.GenerateNull();
         // std::cerr<<"HASDASD:"<<(aht_.End()==aht_.Begin())<<'\n';
@@ -46,21 +46,27 @@ void AggregationExecutor::Init() {
 
 auto AggregationExecutor::Next(Tuple *tuple, RID *rid) -> bool { 
     // auto aggregate=plan_->;
+    // if(plan_->GetGroupBys().empty()){
+    //     return false;
+    // }
     while(true){
         if(aht_iterator_==aht_.End()){
             return false;
         }
         auto aggregate_key = aht_iterator_.Key();
         auto aggregate_val = aht_iterator_.Val();
+        ++aht_iterator_;
         std::vector<Value> aggregate_values{};
         aggregate_values.reserve(aggregate_key.group_bys_.size()+aggregate_val.aggregates_.size());
         aggregate_values.insert(aggregate_values.end(),aggregate_key.group_bys_.begin(),aggregate_key.group_bys_.end());
         aggregate_values.insert(aggregate_values.end(),aggregate_val.aggregates_.begin(),aggregate_val.aggregates_.end());
         // aggregate_values.emplace_back(aggregate_val.aggregates_);
+        // puts("ASDaaa");
+        // std::cout<<aggregate_key.group_bys_.size()<<" "<<aggregate_val.aggregates_.size()<<'\n';
 		*tuple=Tuple(aggregate_values,&plan_->OutputSchema());
         *rid = tuple->GetRid();
-        // // std::cout<<tuple->ToString(&GetOutputSchema())<<'\n';
-        ++aht_iterator_;
+        // std::cout<<tuple->ToString(&GetOutputSchema())<<'\n';
+        
         return true;
     }
     // std::cout<<"HERE\n";
