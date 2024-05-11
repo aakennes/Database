@@ -102,7 +102,6 @@ auto Optimizer::OptimizeSeqScanAsIndexScan(const bustub::AbstractPlanNodeRef &pl
     }
     const auto &filter_predicate = seqscan_plan.filter_predicate_;
     index_oid_t index_oid=INVALID_TXN_ID;
-    table_name=seqscan_plan.table_name_;
     // std::cout<<"HERE: "<<optimized_plan->ToString()<<'\n';
     std::vector<Value> value=getvalue(index_oid,filter_predicate);
     // std::cout<<"HERE: "<<value.empty()<<'\n';

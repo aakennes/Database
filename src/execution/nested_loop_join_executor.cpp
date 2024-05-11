@@ -51,7 +51,7 @@ auto NestedLoopJoinExecutor::Next(Tuple *tuple, RID *rid) -> bool {
   while(true){
     Tuple left_tuple;
 		RID left_rid;
-    std::cout<<right_tuples_.size()<<'\n';
+    // std::cout<<right_tuples_.size()<<'\n';
     if(!is_first_||last_right_id_>=right_tuples_.size()){
       last_right_id_=0;
       is_first_=true;
@@ -62,14 +62,12 @@ auto NestedLoopJoinExecutor::Next(Tuple *tuple, RID *rid) -> bool {
       right_executor_->Init();
       // Init();
       is_find_=false;
-    }
-    else{
+    }else{
       left_tuple=last_left_tuple_;
       left_rid=left_tuple.GetRid();
       // std::cout<<left_tuple.ToString(&plan_->GetLeftPlan()->OutputSchema())<<'\n';
     }
     last_left_tuple_=left_tuple;
-    
     // std::cout<<left_tuple.ToString(&plan_->GetLeftPlan()->OutputSchema())<<" "<<right_tuples_.size()<<'\n';
     for(uint32_t i=last_right_id_;i<right_tuples_.size();++i){
       auto &right_tuple=right_tuples_[i];
@@ -105,7 +103,6 @@ auto NestedLoopJoinExecutor::Next(Tuple *tuple, RID *rid) -> bool {
       for(uint32_t i=0;i<left_size;++i){
         join_values.push_back(left_tuple.GetValue(&left_schema,i));
       }
-      // std::cout<<left_tuple.ToString(&left_schema)<<" "<<right_tuple.ToString(&right_schema)<<'\n';
       for(uint32_t i=0;i<right_size;++i){
         join_values.push_back(ValueFactory::GetNullValueByType(INTEGER));
       }
